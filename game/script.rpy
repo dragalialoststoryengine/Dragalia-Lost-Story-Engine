@@ -340,10 +340,6 @@ label testfiles:
             "Ha ha ha!  In that case, yer on, Boss!"
             jump ranzal_character_procedures
 
-        "{color=#000000}Satan's{/color}":
-            "..."
-            jump satan_character_procedures
-
         "{color=#000000}Thor's{/color}":
             "What do you desire of his lighting?  War?  Peace?  ...Or the end of all?"
             jump thor_character_procedures
@@ -374,6 +370,10 @@ label npctestfiles:
             "...You're sure?"
             "Ok, suit yourself... just don't say I didn't warn you..."
             jump fiend_character_procedures
+
+        "{color=#000000}Satan's{/color}":
+            "..."
+            jump satan_character_procedures
 
         "{color=#000000}No one's.{/color}":
             jump start
