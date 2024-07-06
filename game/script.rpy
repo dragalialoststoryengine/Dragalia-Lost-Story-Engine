@@ -328,6 +328,10 @@ label testfiles:
             "Sweet sassy molassy!!!  Time to break out the Notte Ball!!"
             jump notte_character_procedures
 
+        "{color=#000000}Notte's (Gala){/color}":
+            "The new and improved Notte!! Ready to help you out!!"
+            jump notteG_character_procedures
+
         "{color=#000000}Philia's{/color}":
             "Aha!  It was fate to choose her!  It's the power of love!"
             jump philia_character_procedures
