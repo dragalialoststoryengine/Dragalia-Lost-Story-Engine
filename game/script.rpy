@@ -332,6 +332,10 @@ label testfiles:
             "The new and improved Notte!! Ready to help you out!!"
             jump notteG_character_procedures
 
+        "{color=#000000}Notte's (Summer){/color}":
+            "Just chillaxin' with the gang."
+            jump notteS_character_procedures
+
         "{color=#000000}Philia's{/color}":
             "Aha!  It was fate to choose her!  It's the power of love!"
             jump philia_character_procedures
