@@ -226,6 +226,10 @@ label testfiles:
             "Ahh, love!  Hope you're ready for her to gush about Luca."
             jump chelseaV_character_procedures
 
+        "{color=#000000}Cibella's{/color}":
+            "Note to self:  put something clever here later."
+            jump cibella_character_procedures
+        
         "{color=#000000}Cleo's{/color}":
             "Of course.  She will be with you presently, after she finishes preparing the evening's meal."
             jump cleo_character_procedures
