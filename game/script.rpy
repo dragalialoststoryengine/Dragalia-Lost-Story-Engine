@@ -294,6 +294,10 @@ label testfiles:
             "Aha!!!  Bear witness to the epitome of JUSTICE!!!"
             jump karl_character_procedures
 
+        "{color=#000000}Kleimann's{/color}":
+            "Ah, yes!  Come, would you like to participate in the next experiment?  Whee-ha-ha-hoo!!"
+            jump kleimann_character_procedures
+
         "{color=#000000}Lathna's{/color}":
             "How foolish.  You refuse the greatest mercy, the inability of the human mind to correlate the world's contents?"
             "In that case... recoil."
