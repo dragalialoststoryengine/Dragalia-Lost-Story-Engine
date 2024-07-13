@@ -27,7 +27,7 @@ define ale = Character("Alex", callback=speaker("ale"))
     # *Changing Alex's eyes*:
     #  -->  show alex [keyword]
     #  List of eye keywords:
-    #     -->  relaxed (default), angry, askance, blush, closed_blush, focused, sad, shocked,
+    #     -->  relaxed (default), angry, askance, blush, closed_blush, focused, sad, shock,
     #          squint, surprised, closed_sad
 
     # *Changing Alex's mouth*:

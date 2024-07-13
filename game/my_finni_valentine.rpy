@@ -2648,7 +2648,7 @@ label my_finni_valentine6:
     show speechright sweat at speechright_pos
     eir "Don't worry, Elly, you were a lot of help earlier.  I'm just reaping what I sowed..."
     hide speechright
-    eir "Although I'm sad Finni's the one who had to pay the cost... Back then, I didn't realize she just wanted was some time with me, and so the plans fell apart."
+    eir "Although I'm sad Finni's the one who had to pay the cost... Back then, I didn't realize she just wanted time alone with me, and so the plans fell apart."
     hide eirene with dissolve
 
     show finni frown1 with dissolve
@@ -2911,7 +2911,7 @@ label my_finni_valentine6:
     hide speechright
 
     hide elisanne with dissolve
-    show alex shocked grimace1 with dissolve
+    show alex shock grimace1 with dissolve
     ale "Yes… (cough) that… would be… very… UNFORTUNATE… (ahem)!"
 
     stop music fadeout 10.0
