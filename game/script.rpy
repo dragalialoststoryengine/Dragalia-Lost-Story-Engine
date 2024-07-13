@@ -222,6 +222,10 @@ label testfiles:
             "Ahh!  She knew you would come eventually, darling!"
             jump brunhilda_character_procedures
 
+        "{color=#000000}Chelle's{/color}":
+            "Very well.  I suppose SOME royal appearances are in keeping wtih the principle of bread and circuses..."
+            jump chelle_character_procedures
+
         "{color=#000000}Chelsea's (Valentine){/color}":
             "Ahh, love!  Hope you're ready for her to gush about Luca."
             jump chelseaV_character_procedures
