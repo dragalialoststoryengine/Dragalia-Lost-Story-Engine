@@ -328,6 +328,10 @@ label testfiles:
             "Really?!  His own test file?!  Understood, he'll try his best not to fail in this task."
             jump mascula_character_procedures
 
+        "{color=#000000}Mercury's{/color}":
+            "Of course.  May gentle waters wash away your fatigue."
+            jump mercury_character_procedures
+
         "{color=#000000}Midgardsormr's{/color}":
             "Very well.  Prove that your courage is unbreakable."
             jump midgardsormr_character_procedures
