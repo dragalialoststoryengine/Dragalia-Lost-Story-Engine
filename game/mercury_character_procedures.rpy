@@ -115,33 +115,41 @@ layeredimage mercury:
 
 
 
-layeredimage highbrunhilda:
+layeredimage highmercury:
 
-    always "images/brunhilda_high/brunhilda_high_body.png"
+    always "images/mercury_high/mercury_high_body.png"
 
     group face:
 
-        # 473/1024, 192/1024:
-        pos (0.461914, 0.1875)
+        # 385/1024, 181/1024:
+        pos (0.375977, 0.176758)
 
         attribute normal default:
-            "brunhilda_high_normal_eyes"
+            "mercury_high_normal_eyes"
 
         attribute closed:
-            "images/brunhilda_high/faces/210039_01_parts_c001.png"
+            "images/mercury_high/faces/210040_01_parts_c001.png"
 
+        attribute narrowed:
+            "mercury_high_narrowed_eyes"
 
     group mouth:
 
-        pos (0.461914, 0.1875)
+        pos (0.375977, 0.176758)
 
-        attribute mouth_closed default:
-            "images/brunhilda_high/mouths/210039_01_parts_c003.png"
+        attribute mouth_closed1 default:
+            "images/mercury_high/mouths/210040_01_parts_c004.png"
+        
+        attribute mouth_open1:
+            "images/mercury_high/mouths/210040_01_parts_c006.png"
+
+        attribute mouth_flap1:
+            "mercury_high_mouth_flap1"
 
 
 
 
-image brunhilda0 = "images/brunhilda_zero/brunhilda_zero_body.png"
+image mercury0 = "images/mercury_zero/mercury_zero_body.png"
 
 
 
@@ -184,8 +192,8 @@ image mercury_narrowed_eyes:
     0.05
     repeat
 
-image brunhilda_high_normal_eyes:
-    "images/brunhilda_high/faces/210039_01_parts_c000.png"
+image mercury_high_normal_eyes:
+    "images/mercury_high/faces/210040_01_parts_c000.png"
     choice:
         2
     choice:
@@ -196,51 +204,39 @@ image brunhilda_high_normal_eyes:
         5
     choice:
         6
-    "images/brunhilda_high/faces/210039_01_parts_c001.png"
+    "images/mercury_high/faces/210040_01_parts_c001.png"
+    0.05
+    repeat
+
+image mercury_high_narrowed_eyes:
+    "images/mercury_high/faces/210040_01_parts_c002.png"
+    choice:
+        2
+    choice:
+        3
+    choice:
+        4
+    choice:
+        5
+    choice:
+        6
+    "images/mercury_high/faces/210040_01_parts_c001.png"
     0.05
     repeat
 
 
 # MOUTH animations start here.
 
-image brunhilda_open1_flap_nottalking = "images/brunhilda/mouths/210002_01_parts_c015.png"
+image mercury_high_mouth_flap1_nottalking = "images/mercury_high/mouths/210040_01_parts_c004.png"
 
-image brunhilda_open1_flap_talking:
-    "images/brunhilda/mouths/210002_01_parts_c005.png"
+image mercury_high_mouth_flap1_talking:
+    "images/mercury_high/mouths/210040_01_parts_c006.png"
     0.15
-    "images/brunhilda/mouths/210002_01_parts_c015.png"
-    0.15
-    repeat
-
-image brunhilda_open1_flap = WhileSpeaking("brun", "brunhilda_open1_flap_talking", "brunhilda_open1_flap_nottalking")
-
-
-image brunhilda_wide1_flap_nottalking = "images/brunhilda/mouths/210002_01_parts_c015.png"
-
-image brunhilda_wide1_flap_talking:
-    "images/brunhilda/mouths/210002_01_parts_c007.png"
-    0.15
-    "images/brunhilda/mouths/210002_01_parts_c015.png"
+    "images/mercury_high/mouths/210040_01_parts_c004.png"
     0.15
     repeat
 
-image brunhilda_wide1_flap = WhileSpeaking("brun", "brunhilda_wide1_flap_talking", "brunhilda_wide1_flap_nottalking")
-
-
-
-
-
-
-image brunhilda_high_wide1_flap_nottalking = "images/brunhilda_high/mouths/210039_01_parts_c005.png"
-
-image brunhilda_high_wide1_flap_talking:
-    "images/brunhilda_high/mouths/210039_01_parts_c003.png"
-    0.15
-    "images/brunhilda_high/mouths/210039_01_parts_c005.png"
-    0.15
-    repeat
-
-image brunhilda_high_wide1_flap = WhileSpeaking("brun", "brunhilda_high_wide1_flap_talking", "brunhilda_high_wide1_flap_nottalking")
+image mercury_high_mouth_flap1 = WhileSpeaking("merc", "mercury_high_mouth_flap1_talking", "mercury_high_mouth_flap1_nottalking")
 
 
 
@@ -274,20 +270,41 @@ label mercury_character_procedures:
     show mercury with dissolve
     merc "Ah, greetings.  I was wondering when you'd next come by for a visit."
 
-    show highbrunhilda normal wide1
-    brun "(normal wide1) Behold the true wrath of a woman scorned!!!"
+    show mercury normal mouth_closed1
+    merc "(normal mouth_closed1) As it happens, I was just about to address the mana imbalance in this area."
 
-    show highbrunhilda closed open1
-    brun "(closed open1) Y-You're not even going to pretend to be afraid?!"
+    show mercury closed
+    merc "(closed) I can sense a great sickness in the mana of the lake."
 
-    show highbrunhilda normal wide1_flap
-    brun "(wide1_flap) H-Hey!!!  Don't just walk away!!!!"
+    show mercury narrowed
+    merc "(narrowed) It feels... artificial.  No doubt human activity was involved.  Extensive activity."
 
-    hide highbrunhilda with dissolve
-    show brunhilda0 with dissolve
-    brun "PAY ATTENTION TO ME, DANGIT!!!!!!  GEEZ!!!!"
+    show mercury closed2
+    merc "(closed2) I must transform into my ascended form in order to purify these waters.  Please stand back."
 
-    hide brunhilda0 with dissolve
+    hide mercury with dissolve
+
+
+    show highmercury with dissolve
+    merc "Very well.  This much power should be sufficient to cleanse the lake."
+
+    show highmercury normal mouth_closed1
+    merc "(normal mouth_closed1) Waters of this lake, heed my call and bear forth that which poisons you to this location."
+
+    show highmercury closed mouth_open1
+    merc "(closed mouth_open1) ...I see, the damage is worse than I feared."
+
+    show highmercury narrowed mouth_flap1
+    merc "(narrowed mouth_flap1) ...Waters of this lake, heed my call!  Bear forth that which poisons you to this location!  HRRRAGH!"
+
+    hide highmercury with dissolve
+
+    show mercury0 with dissolve
+    merc "THERE!  The mana pollution!!!  I will isolate it now!"
+    merc "...I have isolated the corrupting mana.  I can scarce believe it took my full authority over water mana to remove."
+    merc "We must find the ones who released this mana at once.  They will pay for defiling my waters."
+
+    hide mercury0 with dissolve
 
     # This goes back to script
 
