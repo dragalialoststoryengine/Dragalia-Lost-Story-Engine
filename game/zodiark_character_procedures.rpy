@@ -120,41 +120,10 @@ layeredimage zodiark:
             "zodiark_mouth_wide_flap1"   
 
 
-layeredimage highmercury:
-
-    always "images/mercury_high/mercury_high_body.png"
-
-    group face:
-
-        # 385/1024, 181/1024:
-        pos (0.375977, 0.176758)
-
-        attribute normal default:
-            "mercury_high_normal_eyes"
-
-        attribute closed:
-            "images/mercury_high/faces/210040_01_parts_c001.png"
-
-        attribute narrowed:
-            "mercury_high_narrowed_eyes"
-
-    group mouth:
-
-        pos (0.375977, 0.176758)
-
-        attribute mouth_closed1 default:
-            "images/mercury_high/mouths/210040_01_parts_c004.png"
-        
-        attribute mouth_open1:
-            "images/mercury_high/mouths/210040_01_parts_c006.png"
-
-        attribute mouth_flap1:
-            "mercury_high_mouth_flap1"
+image highzodiark = "images/zodiark_high/zodiark_high_body.png"
 
 
-
-
-image mercury0 = "images/mercury_zero/mercury_zero_body.png"
+image zodiark0 = "images/zodiark_zero/zodiark_zero_body.png"
 
 
 
@@ -197,23 +166,6 @@ image zodiark_surprised_eyes:
     0.05
     repeat
 
-image mercury_high_normal_eyes:
-    "images/mercury_high/faces/210040_01_parts_c000.png"
-    choice:
-        2
-    choice:
-        3
-    choice:
-        4
-    choice:
-        5
-    choice:
-        6
-    "images/mercury_high/faces/210040_01_parts_c001.png"
-    0.05
-    repeat
-
-image mercury_high_narrowed_eyes:
     "images/mercury_high/faces/210040_01_parts_c002.png"
     choice:
         2
@@ -297,26 +249,13 @@ label zodiark_character_procedures:
     hide zodiark with dissolve
 
 
-    show highmercury with dissolve
-    merc "Very well.  This much power should be sufficient to cleanse the lake."
+    show highzodiark with dissolve
+    zodi "However, while I was by Aurelius's side for many years, only you were able to unlock my true potential."
+    hide highzodiark with dissolve
 
-    show highmercury normal mouth_closed1
-    merc "(normal mouth_closed1) Waters of this lake, heed my call and bear forth that which poisons you to this location."
-
-    show highmercury closed mouth_open1
-    merc "(closed mouth_open1) ...I see, the damage is worse than I feared."
-
-    show highmercury narrowed mouth_flap1
-    merc "(narrowed mouth_flap1) ...Waters of this lake, heed my call!  Bear forth that which poisons you to this location!  HRRRAGH!"
-
-    hide highmercury with dissolve
-
-    show mercury0 with dissolve
-    merc "THERE!  The mana pollution!!!  I will isolate it now!"
-    merc "...I have isolated the corrupting mana.  I can scarce believe it took my full authority over water mana to remove."
-    merc "We must find the ones who released this mana at once.  They will pay for defiling my waters."
-
-    hide mercury0 with dissolve
+    show zodiark0 with dissolve
+    zodi "This form is something you and you alone have witnessed over the past millenia.  Aurelius and I are both so proud of you, child."
+    hide zodiark0 with dissolve
 
     # This goes back to script
 
