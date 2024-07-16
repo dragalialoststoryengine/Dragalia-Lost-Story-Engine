@@ -376,6 +376,10 @@ label testfiles:
             "Of course!  May the blessings of mana be upon you!"
             jump zethia_character_procedures
 
+        "{color=#000000}Zodiark's{/color}":
+            "As you wish; he will accompany you."
+            jump zodiark_character_procedures
+
         "{color=#000000}No one's.{/color}":
             jump start
 
