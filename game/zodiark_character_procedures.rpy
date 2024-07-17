@@ -26,53 +26,41 @@ define zodi = Character("Zodiark", callback=speaker("zodi"))
     #  -->  show zodiark with dissolve
     #       ("with dissolve" is optional but makes transitions cleaner)
 
-    # *Changing Mercury's eyes*:
-    #  -->  show mercury [keyword]
+    # *Changing Zodiark's eyes*:
+    #  -->  show zodiark [keyword]
     #  List of eye keywords:
-    #     -->  normal (default), narrowed, closed, closed2
+    #     -->  normal (default), surprised, closed
 
-    # *Changing Mercury's mouth*:
-    #  -->  show mercury [keyword]
+    # *Changing Zodiark's mouth*:
+    #  -->  show Zodiark [keyword]
     #  List of mouth keywords:
-    #     -->  mouth_closed1 (default)
+    #     -->  mouth_open1 (default), mouth_closed1, mouth_wide1, mouth_open_flap1, mouth_wide_flap1
 
-    # *Writing dialogue for Mercury*:
-    #  --> merc "[Mercury's line here]"
+    # *Writing dialogue for Zodiark*:
+    #  --> zodi "[Zodiark's line here]"
 
-    # *Making Mercury disappear*:
-    #  --> hide mercury with dissolve
+    # *Making Zodiark disappear*:
+    #  --> hide zodiark with dissolve
     #       ("with dissolve" is optional but makes transitions cleaner)
 
 
 
-
-    # *Making High Brunhilda appear*:
-    #  -->  show highbrunhilda with dissolve
+    # *Making High Zodiark appear*:
+    #  -->  show highzodiark with dissolve
     #       ("with dissolve" is optional but makes transitions cleaner)
 
-    # *Changing High Brunhilda's eyes*:
-    #  -->  show highbrunhilda [keyword]
-    #  List of eye keywords:
-    #     -->  normal (default), closed
-
-    # *Changing High Brunhilda's mouth*:
-    #  -->  show highbrunhilda [keyword]
-    #  List of mouth keywords:
-    #     -->  wide1 (default), open1, wide1_flap
-
-    # *Making High Brunhilda disappear*:
-    #  --> hide highbrunhilda with dissolve
+    # *Making High Zodiark disappear*:
+    #  --> hide highzodiark with dissolve
     #       ("with dissolve" is optional but makes transitions cleaner)
 
 
 
-
-    # *Making Brunhilda Zero appear*:
-    #  -->  show brunhilda0 with dissolve
+    # *Making Zodiark Zero appear*:
+    #  -->  show zodiark0 with dissolve
     #       ("with dissolve" is optional but makes transitions cleaner)
 
-    # *Making Brunhilda Zero disappear*:
-    #  --> hide brunhilda0 with dissolve
+    # *Making Zodiark Zero disappear*:
+    #  --> hide zodiark0 with dissolve
     #       ("with dissolve" is optional but makes transitions cleaner)
 
 

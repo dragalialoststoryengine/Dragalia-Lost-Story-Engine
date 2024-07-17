@@ -46,33 +46,32 @@ define merc = Character("Mercury", callback=speaker("merc"))
 
 
 
-    # *Making High Brunhilda appear*:
-    #  -->  show highbrunhilda with dissolve
+    # *Making High Mercury appear*:
+    #  -->  show highmercury with dissolve
     #       ("with dissolve" is optional but makes transitions cleaner)
 
-    # *Changing High Brunhilda's eyes*:
-    #  -->  show highbrunhilda [keyword]
+    # *Changing High Mercury's eyes*:
+    #  -->  show highmercury [keyword]
     #  List of eye keywords:
-    #     -->  normal (default), closed
+    #     -->  normal (default), closed, narrowed
 
-    # *Changing High Brunhilda's mouth*:
-    #  -->  show highbrunhilda [keyword]
+    # *Changing High Mercury's mouth*:
+    #  -->  show highmercury [keyword]
     #  List of mouth keywords:
-    #     -->  wide1 (default), open1, wide1_flap
+    #     -->  mouth_closed1 (default), mouth_open1, mouth_flap1
 
-    # *Making High Brunhilda disappear*:
-    #  --> hide highbrunhilda with dissolve
+    # *Making High Mercury disappear*:
+    #  --> hide highmercury with dissolve
     #       ("with dissolve" is optional but makes transitions cleaner)
 
 
 
-
-    # *Making Brunhilda Zero appear*:
-    #  -->  show brunhilda0 with dissolve
+    # *Making Mercury Zero appear*:
+    #  -->  show mercury0 with dissolve
     #       ("with dissolve" is optional but makes transitions cleaner)
 
     # *Making Brunhilda Zero disappear*:
-    #  --> hide brunhilda0 with dissolve
+    #  --> hide mercury0 with dissolve
     #       ("with dissolve" is optional but makes transitions cleaner)
 
 

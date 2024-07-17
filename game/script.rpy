@@ -298,6 +298,10 @@ label testfiles:
             "Awesome!  Merry Dragonyule 2022!"
             jump iliaDY_character_procedures
 
+        "{color=#000000}Jupiter's{/color}":
+            "...Hmm... Very well, I guess he can indulge you.  Just make it interesting for him, ok?"
+            jump jupiter_character_procedures
+
         "{color=#000000}Karl's{/color}":
             "Aha!!!  Bear witness to the epitome of JUSTICE!!!"
             jump karl_character_procedures
