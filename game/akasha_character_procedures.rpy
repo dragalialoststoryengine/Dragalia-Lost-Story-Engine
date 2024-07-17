@@ -1,3 +1,7 @@
+transform fly_offscreeen_left:
+
+    linear 2.0 xpos -1024
+
 init python:
 
     # This is set to the name of the character that is speaking, or
