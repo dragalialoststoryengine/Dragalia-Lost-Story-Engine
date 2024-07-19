@@ -1,3 +1,14 @@
+#Background Transforms Here
+
+transform bg_jitter:
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
+
+    linear 0.05 pos (0.005, 0.00)
+    linear 0.05 pos (-0.005, 0.00)
+    linear 0.05 pos (0.0, -0.005)
+    linear 0.05 pos (0.0, 0.0)
+
 #Combat Transforms Here
 
 transform trudge_in_left:
@@ -65,6 +76,18 @@ transform lunge_out_right:
     parallel:
         linear 0.25 alpha 0.0
 
+transform fall_down:
+    # Duration:  0.5
+
+    ypos 0.0
+
+    alpha 1.0
+    parallel:
+        linear 0.5 ypos 0.5
+    parallel:
+        linear 0.5 alpha 0.0
+
+
 transform lunge_in_left:
 
     xpos -1.0
@@ -130,6 +153,10 @@ transform thrust_forward:
     pos (0.0, 0.0)
 
 transform hit_shake:
+    # Duration:  0.3
+
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
 
     linear 0.075 xpos (0.02)
     linear 0.15 xpos (-0.02)
@@ -189,6 +216,61 @@ transform walk_out_left:
         linear 0.66 pos (-0.3, 0.0)
     parallel:
         linear 0.66 alpha 0.0
+
+
+
+
+transform run_in_right:
+
+    alpha 0.0
+    pos (0.3, 0.0)
+
+    parallel:
+        linear 0.22 pos (0.1, 0.0)
+    parallel:
+        linear 0.22 alpha 1.0
+
+    linear 0.11 pos (0.0, 0.0)
+
+transform run_in_left:
+
+    alpha 0.0
+    pos (-0.3, 0.0)
+
+    parallel:
+        linear 0.22 pos (-0.1, 0.0)
+    parallel:
+        linear 0.22 alpha 1.0
+
+    linear 0.11 pos (0.0, 0.0)
+
+
+transform run_out_right:
+
+    alpha 1.0
+    pos (0.0, 0.0)
+
+    linear 0.11 pos (0.1, 0.0)
+
+    parallel:
+        linear 0.22 pos (0.3, 0.0)
+    parallel:
+        linear 0.22 alpha 0.0
+
+transform run_out_left:
+
+    alpha 1.0
+    pos (0.0, 0.0)
+
+    linear 0.11 pos (-0.1, 0.0)
+
+    parallel:
+        linear 0.22 pos (-0.3, 0.0)
+    parallel:
+        linear 0.22 alpha 0.0
+
+
+
 
 
 transform agree_dip:
@@ -265,6 +347,25 @@ label combat_animation_test:
 
         hide berserker with dissolve
 
+        show fiend_cyclops_aquatic with dissolve
+        
+        show fiend_cyclops_aquatic at hit_shake
+        pause 0.5
+        
+        show fiend_cyclops_aquatic at fall_down
+
+        pause 0.5
+
+        show field_day at bg_jitter
+        pause 0.5
+
+        hide fiend_cyclops_aquatic
+
+        show berserker with dissolve
+
+        bers "Is that all you have?  I crave MORE!!!"
+
+
         jump animation_test_procedures
 
 
@@ -297,6 +398,23 @@ label story_animation_test:
         show berserker at walk_out_right
 
         bers "This should be the way to go."
+
+
+        show berserker at run_in_right
+
+        bers "Argh!  No, it's the other way!"
+
+        show berserker at run_out_left
+
+        pause 0.8
+
+        show berserker at run_in_left
+
+        bers "Or... was I right the second time?"
+
+        show berserker at run_out_right
+
+
 
         hide berserker with dissolve
 
