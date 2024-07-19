@@ -462,8 +462,8 @@ label othertestfiles:
             jump tutorial_music_soundfiles
 
         "{color=#000000}Animation tests.{/color}":
-            "Good luck.  Maybe we can get it to work this time"
-            jump combat_animation_test
+            "Notoriously tricky.  Let's see if it works this time."
+            jump animation_test_procedures
 
         "{color=#000000}Random test with multiple characters.{/color}":
             "I see.  Good on you for being a risktaker."
