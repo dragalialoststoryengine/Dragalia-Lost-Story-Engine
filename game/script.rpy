@@ -141,20 +141,39 @@ label start:
         #    "This is a test at making a GUI to assist in the story writing process."
         #    jump dlse_story_writer
 
-        "{color=#000000}Character test files.{/color}":
+        "{color=#000000}Test files.{/color}":
             jump testfiles
+
+        "{color=#000000}Nothing.{/color}":
+            return
+
+
+label testfiles:
+
+    image library = "images/backgrounds/Sty_bg_0042_100_00.png"
+    scene library at middle
+
+    menu:
+        "What test files do you want to check?"
+
+        "{color=#000000}Character test files.{/color}":
+            jump charactertestfiles
 
         "{color=#000000}NPC test files.{/color}":
             jump npctestfiles
 
-        "{color=#000000}Fan character test files.{/color}":
-            jump octestfiles
+        "{color=#000000}Non-canon character test files.{/color}":
+            jump noncanoncharactertestfiles
 
         "{color=#000000}Other test files.{/color}":
             jump othertestfiles
 
         "{color=#000000}Nothing.{/color}":
-            return
+            jump start   
+
+
+
+
 
 label tutorialmenu:
 
@@ -190,7 +209,7 @@ label tutorialmenu:
 
 
 
-label testfiles:
+label charactertestfiles:
 
     queue music "audio/music/CRASHER Mana Circles loop.mp3"
 
@@ -389,7 +408,7 @@ label testfiles:
             jump zodiark_character_procedures
 
         "{color=#000000}No one's.{/color}":
-            jump start
+            jump testfiles
 
 
 label npctestfiles:
@@ -416,14 +435,36 @@ label npctestfiles:
             jump satan_character_procedures
 
         "{color=#000000}No one's.{/color}":
-            jump start
+            jump testfiles
 
 
 
+label noncanoncharactertestfiles:
+
+    image library = "images/backgrounds/Sty_bg_0042_100_00.png"
+    scene library at middle
+
+    menu:
+
+        "What test chapter do you want to read?"
+
+        "{color=#000000}Sprite edits.{/color}":
+            "This is a section for sprite edits of existing Dragalia characters / assets."
+            jump spriteedittestfiles
+
+        "{color=#000000}Other IPs.{/color}":
+            "This is a section for animating files from other IP's into the Dragalia Lost Story Engine."
+            jump otheriptestfiles
+
+        "{color=#000000}OC's.{/color}":
+            "This is a section for implementing OC's into the Dragalia Lost Story Engine."
+            jump octestfiles
+
+        "{color=#000000}No one's.{/color}":
+            jump testfiles
 
 
-
-label octestfiles:
+label spriteedittestfiles:
 
     image library = "images/backgrounds/Sty_bg_0042_100_00.png"
     scene library at middle
@@ -437,8 +478,32 @@ label octestfiles:
             jump edeline_character_procedures
 
         "{color=#000000}No one's.{/color}":
-            jump start
+            jump noncanoncharactertestfiles
 
+
+label otheriptestfiles:
+
+    image library = "images/backgrounds/Sty_bg_0042_100_00.png"
+    scene library at middle
+
+    menu:
+
+        "What test chapter do you want to read?"
+
+        "{color=#000000}No one's.{/color}":
+            jump noncanoncharactertestfiles
+
+label octestfiles:
+
+    image library = "images/backgrounds/Sty_bg_0042_100_00.png"
+    scene library at middle
+
+    menu:
+
+        "What test chapter do you want to read?"
+
+        "{color=#000000}No one's.{/color}":
+            jump noncanoncharactertestfiles
 
 
 
@@ -478,4 +543,4 @@ label othertestfiles:
             jump chapter01
 
         "{color=#000000}Nothing.{/color}":
-            jump start
+            jump testfiles
