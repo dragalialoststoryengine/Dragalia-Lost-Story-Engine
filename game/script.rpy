@@ -310,6 +310,10 @@ label testfiles:
             "Ah, yes!  Come, would you like to participate in the next experiment?  Whee-ha-ha-hoo!!"
             jump kleimann_character_procedures
 
+        "{color=#000000}Lapis's{/color}":
+            "Very well!  Time to make the impossible possible!"
+            jump lapis_character_procedures
+
         "{color=#000000}Lathna's{/color}":
             "How foolish.  You refuse the greatest mercy, the inability of the human mind to correlate the world's contents?"
             "In that case... recoil."

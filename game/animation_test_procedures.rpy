@@ -13,9 +13,10 @@ transform bg_jitter:
 
 transform trudge_in_left:
     # Duration = 1.35
+    anchor (0.0, 0.0)
 
     alpha 0.0
-    xpos -0.5
+    pos (-0.5, 0.0)
     parallel:
         linear 0.7 alpha 0.1
     parallel:
@@ -37,9 +38,11 @@ transform trudge_in_left:
 
 transform trudge_in_right:
     # Duration = 1.35
+    anchor (0.0, 0.0)
 
     alpha 0.0
-    xpos 0.5
+    pos (0.5, 0)
+
     parallel:
         linear 0.7 alpha 0.1
     parallel:
@@ -62,6 +65,9 @@ transform trudge_in_right:
 
 transform lunge_out_left:
 
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
+
     alpha 1.0
     parallel:
         linear 0.5 xpos -1.0
@@ -69,6 +75,9 @@ transform lunge_out_left:
         linear 0.25 alpha 0.0
 
 transform lunge_out_right:
+
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
 
     alpha 1.0
     parallel:
@@ -79,7 +88,8 @@ transform lunge_out_right:
 transform fall_down:
     # Duration:  0.5
 
-    ypos 0.0
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
 
     alpha 1.0
     parallel:
@@ -90,7 +100,9 @@ transform fall_down:
 
 transform lunge_in_left:
 
-    xpos -1.0
+    anchor (0.0, 0.0)
+
+    pos (-1.0, 0.0)
     alpha 0.0
 
     linear 0.25 xpos -0.5
@@ -102,7 +114,9 @@ transform lunge_in_left:
 
 transform lunge_in_right:
 
-    xpos 1.0
+    anchor (0.0, 0.0)
+
+    pos (1.0, 0.0)
     alpha 0.0
 
     linear 0.25 xpos 0.5
@@ -113,6 +127,8 @@ transform lunge_in_right:
         linear 0.25 alpha 1.0
 
 transform big_swing_clockwise:
+
+    anchor (0.0, 0.0)
 
     alpha 1.0
     pos (0.0, 0.0)
@@ -125,6 +141,8 @@ transform big_swing_clockwise:
     linear 1.0 pos (0.0, 0.0) knot (-0.8, 0.05) knot (0, 0.1) knot (0.8, 0.05)
 
 transform big_swing_counterclockwise:
+
+    anchor (0.0, 0.0)
 
     alpha 1.0
     pos (0.0, 0.0)
@@ -169,7 +187,7 @@ transform hit_shake:
 # Story transforms here:
 
 transform walk_in_right:
-
+    anchor (0.0, 0.0)
     alpha 0.0
     pos (0.3, 0.0)
 
@@ -181,7 +199,7 @@ transform walk_in_right:
     linear 0.33 pos (0.0, 0.0)
 
 transform walk_in_left:
-
+    anchor (0.0, 0.0)
     alpha 0.0
     pos (-0.3, 0.0)
 
@@ -194,7 +212,7 @@ transform walk_in_left:
 
 
 transform walk_out_right:
-
+    anchor (0.0, 0.0)
     alpha 1.0
     pos (0.0, 0.0)
 
@@ -206,7 +224,7 @@ transform walk_out_right:
         linear 0.66 alpha 0.0
 
 transform walk_out_left:
-
+    anchor (0.0, 0.0)
     alpha 1.0
     pos (0.0, 0.0)
 
@@ -221,7 +239,7 @@ transform walk_out_left:
 
 
 transform run_in_right:
-
+    anchor (0.0, 0.0)
     alpha 0.0
     pos (0.3, 0.0)
 
@@ -233,7 +251,7 @@ transform run_in_right:
     linear 0.11 pos (0.0, 0.0)
 
 transform run_in_left:
-
+    anchor (0.0, 0.0)
     alpha 0.0
     pos (-0.3, 0.0)
 
@@ -246,7 +264,7 @@ transform run_in_left:
 
 
 transform run_out_right:
-
+    anchor (0.0, 0.0)
     alpha 1.0
     pos (0.0, 0.0)
 
@@ -258,7 +276,7 @@ transform run_out_right:
         linear 0.22 alpha 0.0
 
 transform run_out_left:
-
+    anchor (0.0, 0.0)
     alpha 1.0
     pos (0.0, 0.0)
 
@@ -274,11 +292,15 @@ transform run_out_left:
 
 
 transform agree_dip:
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
 
     linear 0.15 ypos (0.035)
     linear 0.15 ypos (0.0)
 
 transform disagree_shake:
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
 
     linear 0.15 xpos (0.02)
     linear 0.3 xpos (-0.02)
@@ -351,6 +373,7 @@ label combat_animation_test:
         
         show fiend_cyclops_aquatic at hit_shake
         pause 0.5
+        hide fiend_cyclops_aquatic
         
         show fiend_cyclops_aquatic at fall_down
 
