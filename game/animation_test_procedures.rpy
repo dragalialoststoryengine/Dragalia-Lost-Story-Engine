@@ -212,6 +212,7 @@ transform walk_in_left:
 
 
 transform walk_out_right:
+    # Duration = 0.99
     anchor (0.0, 0.0)
     alpha 1.0
     pos (0.0, 0.0)
@@ -224,6 +225,7 @@ transform walk_out_right:
         linear 0.66 alpha 0.0
 
 transform walk_out_left:
+    # Duration = 0.99
     anchor (0.0, 0.0)
     alpha 1.0
     pos (0.0, 0.0)

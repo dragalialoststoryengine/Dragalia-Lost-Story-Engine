@@ -502,6 +502,9 @@ label octestfiles:
 
         "What test chapter do you want to read?"
 
+        "{color=#000000}DabblerDragon's{/color}":
+            jump dabblerdragon_character_procedures
+
         "{color=#000000}No one's.{/color}":
             jump noncanoncharactertestfiles
 
