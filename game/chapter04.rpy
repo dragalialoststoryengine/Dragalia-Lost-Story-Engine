@@ -12,7 +12,7 @@ label chapter04:
     scene otherworld with dissolve
 
     show berserker with dissolve
-    ber "Ah!  I'm here!  That means I was able to transcend the bounds of my own world and arrive here!"
+    bers "Ah!  I'm here!  That means I was able to transcend the bounds of my own world and arrive here!"
 
     hide berserker with dissolve
 
