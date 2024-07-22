@@ -276,31 +276,31 @@ label emotes_procedures:
     play sound "audio/sound/anger.wav"
     eud "This should show an angry speech bubble on the right."
 
-    show speechright bad
+    show speechright bad at speechright_pos
     play sound "audio/sound/bad.wav"
     eud "This should show a dissapointed speech bubble on the right."
 
-    show speechright question
+    show speechright question at speechright_pos
     play sound "audio/sound/question.wav"
     eud "This should show a question mark speech bubble on the right."
     
-    show speechright exclamation
+    show speechright exclamation at speechright_pos
     play sound "audio/sound/exclamation.wav"
     eud "This should show an exclamation point speech bubble on the right."
 
-    show speechright note
+    show speechright note at speechright_pos
     play sound "audio/sound/note.wav"
     eud "This should show a music note speech bubble on the right."
 
-    show speechright lightbulb
+    show speechright lightbulb at speechright_pos
     play sound "audio/sound/inspiration.wav"
     eud "This should show a lightbulb speech bubble on the right."
 
-    show speechright heart
+    show speechright heart at speechright_pos
     play sound "audio/sound/heart.wav"
     eud "This should show a heart speech bubble on the right."
 
-    show speechright sweat
+    show speechright sweat at speechright_pos
     play sound "audio/sound/sweat.wav"
     eud "This should show a sweat drop bubble on the right."
 

@@ -137,6 +137,10 @@ label start:
             "Excellent choice.  Android army unite!"
             jump myfinnivalentinemenu
 
+        "{color=#000000}New Castle Stories.{/color}":
+            "Enjoy some short-form content!"
+            jump newcastlestoriesmenu
+
         #"{color=#000000}'DLSE Story Writer.'{/color}":
         #    "This is a test at making a GUI to assist in the story writing process."
         #    jump dlse_story_writer

@@ -308,6 +308,16 @@ transform disagree_shake:
     linear 0.3 xpos (-0.02)
     linear 0.15 xpos (0.0)
 
+transform laugh_bob:
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
+
+    linear 0.15 ypos (-0.017)
+    linear 0.15 ypos (0.0)
+    linear 0.15 ypos (-0.017)
+    linear 0.15 ypos (0.0)
+
+
 
 label animation_test_procedures:
 
