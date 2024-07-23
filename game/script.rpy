@@ -399,6 +399,10 @@ label charactertestfiles:
             "Ha ha ha!  In that case, yer on, Boss!"
             jump ranzal_character_procedures
 
+        "{color=#000000}Ranzal's (Summer){/color}":
+            "Heh, guess you must be hungry!  Time for some BBQ!"
+            jump sranzal_character_procedures
+
         "{color=#000000}Thor's{/color}":
             "What do you desire of his lighting?  War?  Peace?  ...Or the end of all?"
             jump thor_character_procedures
