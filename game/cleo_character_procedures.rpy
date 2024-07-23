@@ -31,7 +31,7 @@ define cle = Character("Cleo", callback=speaker("cle"))
     #  -->  show cleo [keyword]
     #  List of mouth keywords:
     #     -->  mutter1 (default), mutter2, frown1, frown2, pout1,
-    #          shout1, smile1, smile2, smile3, triangle1
+    #          shout1, smile1, smile2, smile3, triangle1, mutter1_closed
 
     # *Writing dialogue for Cleo*:
     #  --> cle "[Notte's line here]"
@@ -96,6 +96,9 @@ layeredimage cleo:
 
         attribute mutter1 default:
             "cleo_mutter1"
+
+        attribute mutter1_closed:
+            "images/cleo/mouths/100004_01_parts_c004.png"
 
         attribute mutter2:
             "cleo_mutter2"

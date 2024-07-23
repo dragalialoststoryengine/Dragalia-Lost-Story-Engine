@@ -29,7 +29,7 @@ define elly = Character("Elisanne", callback=speaker("elly"))
     #  -->  show elisanne [keyword]
     #  List of mouth keywords:
     #     -->  smile1 (the default option), smile2, smile3,
-    #          frown1, frown2, pout1, pout2, shout1, shout2
+    #          frown1, frown2, pout1, pout2, shout1, shout2, frown1_closed
 
     # *Writing dialogue for Elisanne*:
     #  --> elly "[Elisanne's line here]"
@@ -99,6 +99,9 @@ layeredimage elisanne:
 
         attribute frown1:
             "elisanne_frown1"
+
+        attribute frown1_closed:
+            "images/elisanne/mouths/100002_01_parts_c026.png"
 
         attribute smile2:
             "elisanne_smile2"

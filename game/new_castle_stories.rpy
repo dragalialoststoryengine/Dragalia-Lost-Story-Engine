@@ -217,7 +217,10 @@ label berserkerstrueface:
     hide luca with dissolve
 
     show elisanne surprised frown1 with dissolve
-    elly "Oh?  What is your proposal?"
+    show speechright question at speechright_pos
+    play sound "audio/sound/question.wav"
+    elly "Oh?  What, praytell, is your proposal?"
+    hide speechright
     hide elisanne with dissolve
 
     show luca relaxed grin1 with dissolve
@@ -232,6 +235,40 @@ label berserkerstrueface:
     show cleo with dissolve
     cle "And is this even something we ought to be prying into?  I'm sure he has reasons to maintain his privacy."
     hide cleo with dissolve
+
+    show elisanne focused frown2 with dissolve
+    elly "Th-That's right!  Surely it would be more mature to let the matter rest."
+    hide elisanne with dissolve
+
+    show luca askance grin1 with dissolve
+    luc "Well, ok, if you say so..."
+    show luca grin1_closed
+    luc "..."
+    hide luca with dissolve
+
+    show cleo sad mutter1_closed with dissolve
+    cle "..."
+    hide cleo with dissolve
+
+    show elisanne frown1_closed with dissolve
+    elly "..."
+    hide elisanne with dissolve
+
+    show ranzal closed_frown1 with dissolve
+    ranz "..."
+    show ranzal frown1
+    ranz "...Ok, to hell with being mature, we've gotta get to the bottom of this."
+    ranz "Here's my idea..."
+    hide ranzal with dissolve
+
+    image foreststream_night = "images/backgrounds/Sty_bg_0074_300_00.png"
+    scene foreststream_night with fade
+
+
+
+
+
+
 
 
 
