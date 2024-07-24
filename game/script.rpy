@@ -428,6 +428,10 @@ label npctestfiles:
 
         "What test chapter do you want to read?"
 
+        "{color=#000000}Dragons' (minor){/color}":
+            "Bring out the menagerie!!"
+            jump minor_dragon_character_procedures
+
         "{color=#000000}Heavy armored soldiers'{/color}":
             "Yes, sir!  Heavy armor units, assemble for role call!!"
             jump heavyarmor_character_procedures

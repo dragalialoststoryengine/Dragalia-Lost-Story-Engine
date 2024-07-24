@@ -26,8 +26,8 @@ define luc = Character("Luca", callback=speaker("luc"))
     # *Changing Luca's mouth*:
     #  -->  show luca [keyword]
     #  List of mouth keywords:
-    #     -->  grin1 (the default option), grin2, grin3, frown1, frown2, frown3, frown4, frown5, frown6,
-    #          smile1, smile2, grimace, sweat, grin1_closed
+    #     -->  grin1 (the default option), grin2, grin3, frown1, frown2, frown3, mutter1, frown5, shout1,
+    #          smile1, smile2, grimace1, sweat, grin1_closed
 
     # *Writing dialogue for Luca*:
     #  --> luc "[Luca's line here]"
@@ -107,8 +107,8 @@ layeredimage luca:
         attribute smile1:
             "luca_smile1"
 
-        attribute grimace:
-            "luca_grimace"
+        attribute grimace1:
+            "luca_grimace1"
 
         attribute frown2:
             "luca_frown2"
@@ -116,14 +116,14 @@ layeredimage luca:
         attribute frown3:
             "luca_frown3"
 
-        attribute frown4:
-            "luca_frown4"
+        attribute mutter1:
+            "luca_mutter1"
 
         attribute frown5:
             "luca_frown5"
 
-        attribute frown6:
-            "luca_frown6"
+        attribute shout1:
+            "luca_shout1"
 
         attribute grin2:
             "luca_grin2"
@@ -378,16 +378,16 @@ image luca_smile1_talking:
 image luca_smile1 = WhileSpeaking("luc", "luca_smile1_talking", "luca_smile1_nottalking")
 
 
-image luca_grimace_nottalking = "images/luca/mouths/100006_01_parts_c026.png"
+image luca_grimace1_nottalking = "images/luca/mouths/100006_01_parts_c026.png"
 
-image luca_grimace_talking:
+image luca_grimace1_talking:
     "images/luca/mouths/100006_01_parts_c026.png"
     0.15
     "images/luca/mouths/100006_01_parts_c027.png"
     0.15
     repeat
 
-image luca_grimace = WhileSpeaking("luc", "luca_grimace_talking", "luca_grimace_nottalking")
+image luca_grimace1 = WhileSpeaking("luc", "luca_grimace1_talking", "luca_grimace1_nottalking")
 
 
 image luca_frown2_nottalking = "images/luca/mouths/100006_01_parts_c028.png"
@@ -414,16 +414,16 @@ image luca_frown3_talking:
 image luca_frown3 = WhileSpeaking("luc", "luca_frown3_talking", "luca_frown3_nottalking")
 
 
-image luca_frown4_nottalking = "images/luca/mouths/100006_01_parts_c040.png"
+image luca_mutter1_nottalking = "images/luca/mouths/100006_01_parts_c040.png"
 
-image luca_frown4_talking:
+image luca_mutter1_talking:
     "images/luca/mouths/100006_01_parts_c040.png"
     0.15
     "images/luca/mouths/100006_01_parts_c041.png"
     0.15
     repeat
 
-image luca_frown4 = WhileSpeaking("luc", "luca_frown4_talking", "luca_frown4_nottalking")
+image luca_mutter1 = WhileSpeaking("luc", "luca_mutter1_talking", "luca_mutter1_nottalking")
 
 
 image luca_frown5_nottalking = "images/luca/mouths/100006_01_parts_c042.png"
@@ -438,16 +438,16 @@ image luca_frown5_talking:
 image luca_frown5 = WhileSpeaking("luc", "luca_frown5_talking", "luca_frown5_nottalking")
 
 
-image luca_frown6_nottalking = "images/luca/mouths/100006_01_parts_c044.png"
+image luca_shout1_nottalking = "images/luca/mouths/100006_01_parts_c044.png"
 
-image luca_frown6_talking:
+image luca_shout1_talking:
     "images/luca/mouths/100006_01_parts_c044.png"
     0.15
     "images/luca/mouths/100006_01_parts_c045.png"
     0.15
     repeat
 
-image luca_frown6 = WhileSpeaking("luc", "luca_frown6_talking", "luca_frown6_nottalking")
+image luca_shout1 = WhileSpeaking("luc", "luca_shout1_talking", "luca_shout1_nottalking")
 
 
 image luca_frown7_nottalking = "images/luca/mouths/100006_01_parts_c046.png"
@@ -637,14 +637,14 @@ label luca_character_procedures:
     show luca frown3
     luc "This is more of an understated frown (frown3).  Maybe a little neutral?  What do you think?"
 
-    show luca frown4
-    luc "This frown (frown4) has more teeth and is also wider and thinner.  This would be good to express frustration."
+    show luca mutter1
+    luc "This frown (mutter1) has more teeth and is also wider and thinner.  This would be good to express frustration."
 
     show luca frown5
     luc "Oops! This one (frown5)'s kind of goofy and awkward.  ...What?  You think it's cute?  That's embarrassing!"
 
-    show luca frown6
-    luc "Oh!  I almost forgot!!!  If I'm shouting and upset, I might look something like this (frown6)!!!"
+    show luca shout1
+    luc "Oh!  I almost forgot!!!  If I'm shouting and upset, I might look something like this (shout1)!!!"
 
     show luca smile1
     luc "Uh... Well, let me try some smiles with a little less teeth now (smile1)."
@@ -652,8 +652,8 @@ label luca_character_procedures:
     show luca smile2
     luc "Wait... that last one still had some teeth?  Uh... well, let me try smiling while being more careful about that (smile2)..."
 
-    show luca grimace
-    luc "Geez, this is a lot harder than I expected... Definitely worth a grimace, huh?"
+    show luca grimace1
+    luc "Geez, this is a lot harder than I expected... Definitely worth a grimace (grimace1), huh?"
 
     show luca sweat
     luc "For crying out loud, this is so much effort that I've got a bead of sweat!"

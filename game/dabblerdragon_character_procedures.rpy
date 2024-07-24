@@ -25,7 +25,7 @@ define dabbler = Character("DabblerDragon", callback=speaker("dabbler"))
     # *Changing DabblerDragon's mouth*:
     #  -->  show dabblerdragon [keyword]
     #  List of mouth keywords:
-    #     -->  grin1 (default), grin1_inverse
+    #     -->  grin1 (default), grin1_inverse, smile1
 
     # *Writing dialogue for DabblerDragon*:
     #  --> dabbler "[DabblerDragon's line here]"
@@ -55,6 +55,9 @@ layeredimage dabblerdragon:
         attribute closed_relaxed:
             "images/ocs/dabblerdragon/faces/dd_relaxed_closed_face.png"
 
+        attribute wink:
+            "dabblerdragon_wink_eyes"
+
 
     group mouth:
 
@@ -65,6 +68,9 @@ layeredimage dabblerdragon:
 
         attribute grin1_inverse:
             "dabblerdragon_grin1_inverse"
+
+        attribute smile1:
+            "dabblerdragon_smile1"
 
 
 
@@ -88,6 +94,21 @@ image dabblerdragon_relaxed_eyes:
     0.05
     repeat
 
+image dabblerdragon_wink_eyes:
+    "images/ocs/dabblerdragon/faces/dd_wink_face.png"
+    choice:
+        2
+    choice:
+        3
+    choice:
+        4
+    choice:
+        5
+    choice:
+        6
+    "images/ocs/dabblerdragon/faces/dd_relaxed_closed_face.png"
+    0.05
+    repeat
 
 
 
@@ -117,7 +138,16 @@ image dabblerdragon_grin1_inverse_talking:
 image dabblerdragon_grin1_inverse = WhileSpeaking("dabbler", "dabblerdragon_grin1_inverse_talking", "dabblerdragon_grin1_inverse_nottalking")
 
 
+image dabblerdragon_smile1_nottalking = "images/ocs/dabblerdragon/mouths/dd_smile_mouth_closed.png"
 
+image dabblerdragon_smile1_talking:
+    "images/ocs/dabblerdragon/mouths/dd_smile_mouth_open.png"
+    0.15
+    "images/ocs/dabblerdragon/mouths/dd_smile_mouth_closed.png"
+    0.15
+    repeat
+
+image dabblerdragon_smile1 = WhileSpeaking("dabbler", "dabblerdragon_smile1_talking", "dabblerdragon_smile1_nottalking")
 
 
 
@@ -142,13 +172,15 @@ label dabblerdragon_character_procedures:
     show dabblerdragon closed_relaxed
     dabbler "(closed_relaxed) I'm a little embarrassed to be putting a self-insert here, but I wanted to test the ability of the engine to work with new art assets."
 
-    show dabblerdragon relaxed
-    dabbler "Anyway, I want to take this opportunity to thank everyone involved in the Dragalia Lost Story Engine project."
+    show dabblerdragon relaxed smile1
+    dabbler "(smile1) Anyway, I want to take this opportunity to thank everyone involved in the Dragalia Lost Story Engine project."
+    show dabblerdragon grin1
     dabbler "I really miss the Dragalia Lost game and it's been really nice to still find people who want to talk about it and be creative."
 
-    show dabblerdragon grin1_inverse
-    dabbler "(grin1_inverse) And just as importantly, I want to thank everyone who's taken an interest in the project over the years.  Without the energy from you guys, I wouldn't have had the motivation to keep going!"
+    show dabblerdragon wink grin1_inverse
+    dabbler "(wink grin1_inverse) And just as importantly, I want to thank everyone who's taken an interest in the project over the years.  Without the energy from you guys, I wouldn't have had the motivation to keep going!"
 
+    show dabblerdragon relaxed
     dabbler "I hope you all can enjoy the Dragalia Lost Story Engine for many years to come, and look forward to telling stories with you together!"
 
 

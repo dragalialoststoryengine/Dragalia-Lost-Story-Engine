@@ -261,13 +261,57 @@ label berserkerstrueface:
     ranz "Here's my idea..."
     hide ranzal with dissolve
 
+
+
     image foreststream_night = "images/backgrounds/Sty_bg_0074_300_00.png"
     scene foreststream_night with fade
 
 
+    show berserker at walk_in_right
+    pause 1.0
+    show speechright question at speechright_pos
+    play sound "audio/sound/question.wav"
+    bers "...Is there a particular reason you've brought me here in your swimming trunks?"
+    hide speechright
+    hide berserker with dissolve
 
+    show sranzal at walk_in_right
+    ranz "Well, of course.  You said you were worn out earlier, and as yer buddy, I couldn't just ignore that, now, could I?"
+    ranz "So I figured I'd treat you to one of my new favorite passtimes:  a hot springs bath!"
+    hide sranzal with dissolve
 
+    show berserker surprised with dissolve
+    bers "Hot springs?  I was unaware that the Halidom had such amenities.  And is this not just a regular pond?"
+    hide berserker with dissolve
 
+    show sranzal relaxed smile1 with dissolve
+    ranz "Well, about that... I'm really just cashing in a favor from my big ol' pal Kagutsuchi over there."
+    hide sranzal with dissolve
+
+    show kagutsuchi with dissolve
+    kagut "Ah, hello, Ranzal!  Come in, the water is clean and pure!"
+    hide kagutsuchi with dissolve
+
+    show berserker with dissolve
+    bers "Ah, I see.  The dragon's heat warms the surrounding water."
+    show berserker surprised
+    bers "But... is that really all there is to this invitation?"
+    hide berserker with dissolve
+
+    show sranzal surprised grin2 with dissolve
+    ranz "What, you think I have some motive other than helping one of my best buds?"
+    hide sranzal with dissolve
+
+    image woods_night = "images/backgrounds/Sty_bg_0021_300_00.png"
+    scene woods_night with fade
+
+    show elisanne blush pout1 with dissolve
+    elly "Ohh... this feels really wrong...  Ought we truly to stoop to the level of base voyeurs?"
+    hide elisanne with dissolve
+
+    show luca focused mutter1 with dissolve
+    luc "Do you want to find out what Berserker looks like or not?  Now shhh!  He'll hear us if you're too loud!"
+    hide luca with dissolve
 
 
 
