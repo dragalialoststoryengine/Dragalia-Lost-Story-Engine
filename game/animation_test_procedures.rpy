@@ -297,6 +297,13 @@ transform agree_dip:
     anchor (0.0, 0.0)
     pos (0.0, 0.0)
 
+    linear 0.15 ypos (0.017)
+    linear 0.15 ypos (0.0)
+
+transform bigger_dip:
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
+
     linear 0.15 ypos (0.035)
     linear 0.15 ypos (0.0)
 
@@ -316,6 +323,36 @@ transform laugh_bob:
     linear 0.15 ypos (0.0)
     linear 0.15 ypos (-0.017)
     linear 0.15 ypos (0.0)
+
+
+
+transform appear_left:
+    alpha 0.0
+    anchor (0.0, 0.0)
+    pos (-0.35, 0.0)
+    
+    linear 0.5 alpha 1.0
+
+transform appear_right:
+    alpha 0.0
+    anchor (0.0, 0.0)
+    pos (0.35, 0.0)
+    
+    linear 0.3 alpha 1.0
+
+transform disappear_left:
+    alpha 1.0
+    anchor (0.0, 0.0)
+    pos (-0.35, 0.0)
+    
+    linear 0.3 alpha 0.0
+
+transform disappear_right:
+    alpha 1.0
+    anchor (0.0, 0.0)
+    pos (0.35, 0.0)
+    
+    linear 0.3 alpha 0.0
 
 
 

@@ -98,7 +98,7 @@ label berserkerstrueface:
 
     show berserker askance with dissolve
     bers "And I was merely stopping by to be polite.  I'm actually returning the empty bowl of stew I ate earlier."
-    show berserker neutral at agree_dip
+    show berserker neutral at bigger_dip
     bers "Excellent as always, Cleo.  The rosemary added some wonderful flavor."
     hide berserker with dissolve
 
@@ -143,12 +143,15 @@ label berserkerstrueface:
     elly "Ranzal, I believe you knew him during your stint as a mercenary.  What does Berserker look like underneath his armor?"
     hide elisanne with dissolve
 
-    show ranzal closed_neutral mutter1 with dissolve
+    show ranzal neutral mutter1 with dissolve
+    pause 0.5
+    show ranzal at disagree_shake
     ranz "Yer guess is as good as mine.  For someone who's got guts like crazy on the battlefield, he's weirdly shy about showing some skin."
+    show ranzal closed_neutral
     ranz "But then again, being a merc's a hard life; almost everybody picks up some quirks and habits after a while."
     show ranzal squint grimace2
     ranz "Man's probably got some nasty scars he's too polite to show.  Heck, given how he fights, he's probably covered in gashes."
-    show ranzal focused mutter1
+    show ranzal focused mutter1 at agree_dip
     ranz "I'm sure he's just looking out for squeamish folks, or else he's avoiding pity glances for his war wounds."
     hide ranzal with dissolve
 
@@ -158,6 +161,7 @@ label berserkerstrueface:
     show cleo blush_askance shout1
     show speechright sweat at speechright_pos
     play sound "audio/sound/sweat.wav"
+    show cleo at disagree_shake
     cle "...Not that I'm interested in him that way!  He's much too war-crazy for my taste."
     hide speechright
     show cleo mutter1
@@ -185,7 +189,10 @@ label berserkerstrueface:
     hide cleo with dissolve
 
     show ranzal squint shout1 with dissolve
+    show speechright anger at speechright_pos
+    play sound "audio/sound/anger.wav"
     ranz "L-Like hell I am!"
+    hide speechright
     hide ranzal with dissolve
 
     show luca relaxed_closed frown1 with dissolve
@@ -200,7 +207,7 @@ label berserkerstrueface:
 
     show elisanne focused pout1 with dissolve
     elly "Oh, come now, Luca!  That's not nice to say!"
-    show elisanne closed_neutral
+    show elisanne closed_neutral at disagree_shake
     elly "I bet he's just really pale, so he covers up to avoid getting sunburnt."
     hide elisanne with dissolve
 
@@ -213,6 +220,7 @@ label berserkerstrueface:
     hide cleo with dissolve
 
     show luca relaxed_closed grin1 with dissolve
+    show luca at laugh_bob
     luc "Guys, guys, calm down.  There's an easy way to solve this argument."
     hide luca with dissolve
 
@@ -237,6 +245,8 @@ label berserkerstrueface:
     hide cleo with dissolve
 
     show elisanne focused frown2 with dissolve
+    pause 0.5
+    show elisanne at disagree_shake
     elly "Th-That's right!  Surely it would be more mature to let the matter rest."
     hide elisanne with dissolve
 
@@ -256,9 +266,24 @@ label berserkerstrueface:
 
     show ranzal closed_frown1 with dissolve
     ranz "..."
-    show ranzal frown1
+    show ranzal frown1 at disagree_shake
     ranz "...Ok, to hell with being mature, we've gotta get to the bottom of this."
-    ranz "Here's my idea..."
+    hide ranzal with dissolve
+
+    show cleo focused at appear_left
+    show elisanne closed_neutral frown1 at appear_right
+    show luca with dissolve
+    elly "I agree, Ilia forgive me but I simply must know."
+    cle "Thank goodness, it's not just me."
+    luc "I couldn't even buy the words as they were coming out of my mouth."
+    show elisanne at disappear_right
+    show cleo at disappear_left
+    hide luca with dissolve
+    hide elisanne
+    hide cleo
+
+    show ranzal frown1 with dissolve
+    ranz "As it happens, I actually have an idea that might have a shot.  Here's the plan..."
     hide ranzal with dissolve
 
 
@@ -302,16 +327,44 @@ label berserkerstrueface:
     ranz "What, you think I have some motive other than helping one of my best buds?"
     hide sranzal with dissolve
 
+
+
     image woods_night = "images/backgrounds/Sty_bg_0021_300_00.png"
     scene woods_night with fade
 
     show elisanne blush pout1 with dissolve
-    elly "Ohh... this feels really wrong...  Ought we truly to stoop to the level of base voyeurs?"
+    elly "Ohh... this feels really wrong...  Ought we truly to stoop to the level of base voyeurs hiding in bushes?"
     hide elisanne with dissolve
 
-    show luca focused mutter1 with dissolve
+    show luca askance mutter1 with dissolve
     luc "Do you want to find out what Berserker looks like or not?  Now shhh!  He'll hear us if you're too loud!"
     hide luca with dissolve
+
+    show cleo focused with dissolve
+    cle "Agreed.  There's no reason to feel abashed, we'll simply leave as soon as he takes off his helmet."
+    hide cleo with dissolve
+
+
+
+    scene foreststream_night with fade
+
+    show berserker with dissolve
+    bers "Surely this invitation isn't a comment on my personal hygiene, is it?"
+    hide berserker with dissolve
+    
+    show sranzal closed_neutral with dissolve
+    show sranzal at laugh_bob
+    ranz "Hehe, no, of course not.  I just figured you'd appreciate a good soak.  I always find this the best way to relieve tension."
+    hide sranzal with dissolve
+
+    show berserker askance with dissolve
+    bers "Hmm... I suppose I do need to be rested and refreshed for tomorrow's outing..."
+    show berserker 
+    bers "Still, I generally prefer to bathe in my quarters.  Is this dragon-bath truly something special?"
+    hide berserker with dissolve
+
+    show sranzal with dissolve
+    ranz ""
 
 
 
