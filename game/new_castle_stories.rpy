@@ -43,7 +43,7 @@ label berserkerstrueface:
     scene greathall_night with fade
 
     show cleo at walk_in_left
-    cle "I was told that I needed to make a fresh pot of stew, but I put out the first tureen less than fifteen minutes ago.  Who could possibly...?"
+    cle "I was told that I needed to make a fresh pot of stew, but I just put out the first tureen not fifteen minutes ago.  Who could possibly...?"
 
     show cleo glare pout1
     show speechright anger at speechright_pos
@@ -105,7 +105,7 @@ label berserkerstrueface:
     show ranzal flinch shout1 with dissolve
     show speechright bad at speechright_pos
     play sound "audio/sound/bad.wav"
-    ranz "Oh, of course, NOW you step in with that tidbit!  Thanks for letting me struggle back there!"
+    ranz "Oh, of course, NOW you step in with that herbal tidbit!  Thanks for letting me struggle back there!"
     hide speechright
     hide ranzal with dissolve
 
@@ -274,8 +274,8 @@ label berserkerstrueface:
     show elisanne closed_neutral frown1 at appear_right
     show luca with dissolve
     elly "I agree, Ilia forgive me but I simply must know."
-    cle "Thank goodness, I thought I was the only one who was desperate to know."
-    luc "I couldn't even buy the words as they were coming out of my mouth."
+    cle "Thank goodness, I thought I was the only one who was desperate for answers."
+    luc "Yeah, I couldn't even buy the words as they were coming out of my MOUTH."
     show elisanne at disappear_right
     show cleo at disappear_left
     hide luca with dissolve
@@ -283,9 +283,12 @@ label berserkerstrueface:
     hide cleo
 
     show ranzal frown1 with dissolve
-    ranz "As it happens, I actually have an idea that might have a shot.  Here's the plan..."
+    ranz "As it happens, I actually have an idea that might have a shot."
+    ranz "Here's the plan..."
     hide ranzal with dissolve
 
+
+    play music "audio/music/Cinderella Step (Story Version A) loop.mp3" fadeout 1.0
 
 
     image foreststream_night = "images/backgrounds/Sty_bg_0074_300_00.png"
@@ -332,8 +335,12 @@ label berserkerstrueface:
     image woods_night = "images/backgrounds/Sty_bg_0021_300_00.png"
     scene woods_night with fade
 
+
     show elisanne blush pout1 with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
     elly "Ohh... this feels really wrong...  Ought we truly to stoop to the level of base voyeurs hiding in bushes by a bath?"
+    hide speechright
     hide elisanne with dissolve
 
     show luca askance mutter1 with dissolve
@@ -372,18 +379,26 @@ label berserkerstrueface:
     bers "Hmm... I am embarrassed to admit, but milk does not agree with me...  I do apprecate the gesture, but perhaps I should simply retire early."
     hide berserker with dissolve
 
-    show sranzal surprised frown1_closed with dissolve
+    show sranzal surprised mutter1_closed with dissolve
     ranz "(Drat!  I'm losin' him!  Time to bring out the big guns...)"
-    show sranzal relaxed_closed grin1
+    show sranzal closed_neutral grin1
     ranz "Oh, well.  If you're sure.  Maybe it's for the best."
+
+    show speechright note at speechright_pos
+    play sound "audio/sound/note.wav"
+    
     ranz "After all, facing the heat of a dragon can be a little... intense."
+    hide speechright
     hide sranzal with dissolve
 
+    show speechright exclamation at speechright_pos
+    play sound "audio/sound/exclamation.wav"
     show berserker surprised with dissolve
     bers "...!"
+    hide speechright
     hide berserker with dissolve
 
-    show sranzal relaxed_closed grin1 with dissolve
+    show sranzal closed_neutral grin1 with dissolve
     ranz "Yeah, when it comes to the power of flame, Kagutsuchi's no pushover."
     ranz "Even just his ambient heat in the water can be a little extreme for some people."
     ranz "So if it's not your cup 'o tea, I totally get--"
@@ -397,9 +412,12 @@ label berserkerstrueface:
     ranz "(splutter) Wh-Whoa, man!  You're really gonna do this in full plate armor--?!"
     hide sranzal with dissolve
 
+    play music "audio/music/CRASHER (Story Version C) intro.flac" fadeout 1.0
+    queue music "audio/music/CRASHER (Story Version C).flac"
+
     show berserker burn with dissolve
     bers "Come, dragon!  Are the waters stoked by your flames truly so tepid?!"
-    show bserserker burn2
+    show berserker burn2
     bers "Only a brilliant heat can warm these frigid bones of mine!!"
     hide berserker with dissolve
 
@@ -409,7 +427,7 @@ label berserkerstrueface:
 
     show sranzal surprised frown1 with dissolve
     ranz "Uhh... for the record, I don't have any issue with the current temperature, guys..."
-    show sranzal shock frown1
+    show sranzal shocked frown1
     ranz "--Hey, it's getting a little hot in here..."
     show sranzal shout1
     ranz "OW!  OW!  Seriously?!?  We're gonna boil at this rate!!!"
