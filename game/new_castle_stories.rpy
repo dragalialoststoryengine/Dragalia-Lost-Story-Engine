@@ -227,7 +227,7 @@ label berserkerstrueface:
     show elisanne surprised frown1 with dissolve
     show speechright question at speechright_pos
     play sound "audio/sound/question.wav"
-    elly "Oh?  What, praytell, is your proposal?"
+    elly "Oh?  What, pray tell, is your proposal?"
     hide speechright
     hide elisanne with dissolve
 
@@ -274,7 +274,7 @@ label berserkerstrueface:
     show elisanne closed_neutral frown1 at appear_right
     show luca with dissolve
     elly "I agree, Ilia forgive me but I simply must know."
-    cle "Thank goodness, it's not just me."
+    cle "Thank goodness, I thought I was the only one who was desperate to know."
     luc "I couldn't even buy the words as they were coming out of my mouth."
     show elisanne at disappear_right
     show cleo at disappear_left
@@ -333,7 +333,7 @@ label berserkerstrueface:
     scene woods_night with fade
 
     show elisanne blush pout1 with dissolve
-    elly "Ohh... this feels really wrong...  Ought we truly to stoop to the level of base voyeurs hiding in bushes?"
+    elly "Ohh... this feels really wrong...  Ought we truly to stoop to the level of base voyeurs hiding in bushes by a bath?"
     hide elisanne with dissolve
 
     show luca askance mutter1 with dissolve
@@ -364,7 +364,95 @@ label berserkerstrueface:
     hide berserker with dissolve
 
     show sranzal with dissolve
-    ranz ""
+    ranz "It's the best, I'm tellin' ya!  It soothes injuries, reduces aches... it's all-around invigoratin'!"
+    ranz "Plus, afterwards, when you're all warmed up, you can have some cold milk, and... whew man, it's tops!"
+    hide sranzal with dissolve
+
+    show berserker askance with dissolve
+    bers "Hmm... I am embarrassed to admit, but milk does not agree with me...  I do apprecate the gesture, but perhaps I should simply retire early."
+    hide berserker with dissolve
+
+    show sranzal surprised frown1_closed with dissolve
+    ranz "(Drat!  I'm losin' him!  Time to bring out the big guns...)"
+    show sranzal relaxed_closed grin1
+    ranz "Oh, well.  If you're sure.  Maybe it's for the best."
+    ranz "After all, facing the heat of a dragon can be a little... intense."
+    hide sranzal with dissolve
+
+    show berserker surprised with dissolve
+    bers "...!"
+    hide berserker with dissolve
+
+    show sranzal relaxed_closed grin1 with dissolve
+    ranz "Yeah, when it comes to the power of flame, Kagutsuchi's no pushover."
+    ranz "Even just his ambient heat in the water can be a little extreme for some people."
+    ranz "So if it's not your cup 'o tea, I totally get--"
+    hide sranzal with dissolve
+
+    show berserker burn with dissolve
+    bers "Very well, allow me to join you!  Ha ha ha!!!"
+    hide berserker with dissolve
+
+    show sranzal shocked shout1 with dissolve
+    ranz "(splutter) Wh-Whoa, man!  You're really gonna do this in full plate armor--?!"
+    hide sranzal with dissolve
+
+    show berserker burn with dissolve
+    bers "Come, dragon!  Are the waters stoked by your flames truly so tepid?!"
+    show bserserker burn2
+    bers "Only a brilliant heat can warm these frigid bones of mine!!"
+    hide berserker with dissolve
+
+    show kagutsuchi with dissolve
+    kagut "Hmph.  As you wish."
+    hide kagutsuchi with dissolve
+
+    show sranzal surprised frown1 with dissolve
+    ranz "Uhh... for the record, I don't have any issue with the current temperature, guys..."
+    show sranzal shock frown1
+    ranz "--Hey, it's getting a little hot in here..."
+    show sranzal shout1
+    ranz "OW!  OW!  Seriously?!?  We're gonna boil at this rate!!!"
+    hide sranzal with dissolve
+
+    show berserker burn2 with dissolve
+    bers "Wa-hahaha!!!  That's more like it!  Shall we see who can stay in the longest, Ranzal?!"
+    hide berserker with dissolve
+
+    
+    scene woods_night with fade
+
+    show cleo frown1 at appear_left
+    show elisanne frown1 at appear_right
+    show luca frown1 with dissolve
+
+    luc "Well... That was a bust.  Shoulda known, it was a Ranzal plan after all."
+    elly "Poor Ranzal... Cleo, can you heal him?"
+    cle "Not from here; we'd be spotted!"
+
+    show luca surprised
+    show elisanne surprised
+    show cleo surprised
+
+    ranz "SOMEONE HELP!!  THE SIDES ARE TOO HOT TO CLIMB OUT!!!"
+    ranz "I'M TRAPPED IN BOILING WATER WITH A MANIAC!!!  COME ON, GUYS!!!"
+
+    elly "...We should leave, lest he implicate us in this fiasco."
+    show elisanne at disappear_right
+
+    cle "I rather thought this matter needed a woman's touch, anyway."
+    show cleo at disappear_left
+
+    luc "...Yup, let's bail before Ranzal blows our cover."
+    hide luca with dissolve
+
+    bers "HAHAHAHA!!!  I FEEL ALIVE!!!"
+
+    ranz "WELL, I FEEL LIKE I'M DYING!!!  SOMEONE SAVE ME!!!"
+
+
+
+
 
 
 
