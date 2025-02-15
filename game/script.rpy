@@ -350,6 +350,10 @@ label charactertestfiles:
             "Hmph.  Well, get it over with, then.  No need to stare."
             jump linus_character_procedures
 
+        "{color=#000000}Lowen's{/color}":
+            "O-Oh, ok!  I'm up to the task!"
+            jump lowen_character_procedures
+
         "{color=#000000}Luca's{/color}":
             "HA!  You just got pranked!!!  There's no test files for Luca!!!"
             "...Just kidding.  I'll take you to him now..."
