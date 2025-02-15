@@ -252,7 +252,7 @@ label berserkerstrueface:
 
     show luca askance grin1 with dissolve
     luc "Well, ok, if you say so..."
-    show luca grin1_closed
+    show luca frown1_closed
     luc "..."
     hide luca with dissolve
 
@@ -266,8 +266,11 @@ label berserkerstrueface:
 
     show ranzal closed_frown1 with dissolve
     ranz "..."
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"
     show ranzal frown1 at disagree_shake
     ranz "...Ok, to hell with being mature, we've gotta get to the bottom of this."
+    hide speechright
     hide ranzal with dissolve
 
     show cleo focused at appear_left
@@ -283,12 +286,17 @@ label berserkerstrueface:
     hide cleo
 
     show ranzal frown1 with dissolve
+    show speechright lightbulb at speechright_pos
+    play sound "audio/sound/inspiration.wav"
     ranz "As it happens, I actually have an idea that might have a shot."
+    hide speechright
     ranz "Here's the plan..."
     hide ranzal with dissolve
 
 
-    play music "audio/music/Cinderella Step (Story Version A) loop.mp3" fadeout 1.0
+    # play music "audio/music/Cinderella Step (Story Version A) loop.mp3" fadeout 1.0
+    play music "audio/music/BANG (Story Version B) intro.flac" fadeout 1.0
+    queue music "audio/music/BANG (Story Version B).flac"
 
 
     image foreststream_night = "images/backgrounds/Sty_bg_0074_300_00.png"
@@ -327,7 +335,10 @@ label berserkerstrueface:
     hide berserker with dissolve
 
     show sranzal surprised grin2 with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
     ranz "What, you think I have some motive other than helping one of my best buds?"
+    hide speechright
     hide sranzal with dissolve
 
 
@@ -339,7 +350,8 @@ label berserkerstrueface:
     show elisanne blush pout1 with dissolve
     show speechright sweat at speechright_pos
     play sound "audio/sound/sweat.wav"
-    elly "Ohh... this feels really wrong...  Ought we truly to stoop to the level of base voyeurs hiding in bushes by a bath?"
+    elly "Ohh... this feels really wrong...  Ought we truly to stoop to the level of base voyeurs hiding in bushes?"
+    elly "They're about to bathe, for the Goddess's sake!"
     hide speechright
     hide elisanne with dissolve
 
@@ -372,21 +384,33 @@ label berserkerstrueface:
 
     show sranzal with dissolve
     ranz "It's the best, I'm tellin' ya!  It soothes injuries, reduces aches... it's all-around invigoratin'!"
+    show sranzal closed_neutral
+    show speechright note at speechright_pos
+    play sound "audio/sound/note.wav"
     ranz "Plus, afterwards, when you're all warmed up, you can have some cold milk, and... whew man, it's tops!"
+    hide speechright
     hide sranzal with dissolve
 
     show berserker askance with dissolve
-    bers "Hmm... I am embarrassed to admit, but milk does not agree with me...  I do apprecate the gesture, but perhaps I should simply retire early."
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"
+    bers "Hmm... I am embarrassed to admit, but milk does not actually agree with me..."
+    bers "I do apprecate the gesture, but perhaps I should simply retire early..."
+    hide speechright
     hide berserker with dissolve
 
     show sranzal surprised mutter1_closed with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
     ranz "(Drat!  I'm losin' him!  Time to bring out the big guns...)"
+    # show speechright lightbulb at speechright_pos
+    # play sound "audio/sound/inspiration.wav"
     show sranzal closed_neutral grin1
+    hide speechright
     ranz "Oh, well.  If you're sure.  Maybe it's for the best."
-
     show speechright note at speechright_pos
     play sound "audio/sound/note.wav"
-    
+    show sranzal focused
     ranz "After all, facing the heat of a dragon can be a little... intense."
     hide speechright
     hide sranzal with dissolve
@@ -398,18 +422,29 @@ label berserkerstrueface:
     hide speechright
     hide berserker with dissolve
 
-    show sranzal closed_neutral grin1 with dissolve
+    show sranzal focused grin1 with dissolve
     ranz "Yeah, when it comes to the power of flame, Kagutsuchi's no pushover."
-    ranz "Even just his ambient heat in the water can be a little extreme for some people."
+    show sranzal closed_neutral
+    show sranzal at sink_down
+    play sound "audio/sound/splash small.mp3"
+    ranz "Yyyyup, even just his ambient heat in the water can be a little extreme for some people."
     ranz "So if it's not your cup 'o tea, I totally get--"
     hide sranzal with dissolve
 
-    show berserker burn with dissolve
-    bers "Very well, allow me to join you!  Ha ha ha!!!"
+    show berserker with dissolve
+    show berserker burn
+    bers "Very well, allow me to join you after all!"
+    stop music fadeout 1.0
+    play sound "audio/sound/splash big.mp3"
+    show berserker at jump_down
+    bers "Ha ha ha!!!"
     hide berserker with dissolve
 
     show sranzal shocked shout1 with dissolve
+    show speechright exclamation at speechright_pos
+    play sound "audio/sound/exclamation.wav"
     ranz "(splutter) Wh-Whoa, man!  You're really gonna do this in full plate armor--?!"
+    hide speechright
     hide sranzal with dissolve
 
     play music "audio/music/CRASHER (Story Version C) intro.flac" fadeout 1.0
@@ -422,18 +457,31 @@ label berserkerstrueface:
     hide berserker with dissolve
 
     show kagutsuchi with dissolve
+    show speechright anger at speechright_pos
+    play sound "audio/sound/anger.wav"
     kagut "Hmph.  As you wish."
+    hide speechright
     hide kagutsuchi with dissolve
 
     show sranzal surprised frown1 with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
     ranz "Uhh... for the record, I don't have any issue with the current temperature, guys..."
+    hide speechright
     show sranzal shocked frown1
     ranz "--Hey, it's getting a little hot in here..."
     show sranzal shout1
+    show speechright exclamation at speechright_pos
+    play sound "audio/sound/exclamation.wav"
+    play sound "audio/sound/steam.mp3"
+    image fog = "images/effects/fog.png"
+    show fog zorder 99 with dissolve
     ranz "OW!  OW!  Seriously?!?  We're gonna boil at this rate!!!"
+    hide speechright
     hide sranzal with dissolve
 
     show berserker burn2 with dissolve
+    show berserker at laugh_bob
     bers "Wa-hahaha!!!  That's more like it!  Shall we see who can stay in the longest, Ranzal?!"
     hide berserker with dissolve
 
@@ -444,9 +492,14 @@ label berserkerstrueface:
     show elisanne frown1 at appear_right
     show luca frown1 with dissolve
 
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"
+
     luc "Well... That was a bust.  Shoulda known, it was a Ranzal plan after all."
-    elly "Poor Ranzal... Cleo, can you heal him?"
-    cle "Not from here; we'd be spotted!"
+    luc "Even IF Berserker took off his armor at this point, I can't see anything through all that steam."
+    hide speechright
+    elly "Poor Ranzal... Cleo, are you perchance able to heal him?"
+    cle "Not from this vantage point; we'd be spotted!"
 
     show luca surprised
     show elisanne surprised
@@ -466,13 +519,128 @@ label berserkerstrueface:
 
     bers "HAHAHAHA!!!  I FEEL ALIVE!!!"
 
-    ranz "WELL, I FEEL LIKE I'M DYING!!!  SOMEONE SAVE ME!!!"
+    ranz "WELL, I FEEL LIKE I'M DYING!!!  SOMEBODY SAVE ME!!!"
 
+    stop music fadeout 1.0
 
+    image greathall_morning = "images/backgrounds/Sty_bg_0072_100_00.png"
+    scene greathall_morning with fade
 
+    play music "audio/music/Utopia loop.mp3"
 
+    show luca relaxed_closed mutter1 at walk_in_right
+    luc "(Yawn) Good morning, Cleo.  Anything good for breakfast?"
+    hide luca with dissolve
 
+    show cleo focused2 with dissolve
+    cle "Ah, look who finally decided to wake up."
+    show cleo focused
+    cle "Here, we have a spread of oatmeal, Hinamotoan rice porridge, applesauce, orange juice, coffee, tea..."
+    hide cleo with dissolve
 
+    show luca surprised frown1 with dissolve
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"
+    luc "...Uh... is there anything less... liquid-y?"
+    hide speechright
+    hide luca with dissolve
+
+    show elisanne pained frown1 with dissolve
+    elly "Luca!  Don't tell me you've already forgotten the plan."
+    hide elisanne with dissolve
+
+    show luca surprised mutter1 with dissolve
+    show speechright lightbulb at speechright_pos
+    play sound "audio/sound/inspiration.wav"
+    luc "Ohhh, right, my bad!  Which reminds me, where is..."
+    hide speechright
+    hide luca with dissolve
+
+    show ranzal angry closed_frown1 at walk_in_right
+    play sound "audio/sound/steam.mp3"
+    image fog = "images/effects/fog.png"
+    show fog zorder 99 with dissolve
+    hide fog with dissolve
+    ranz "..."
+    hide ranzal with dissolve
+
+    show luca shocked frown2 with dissolve
+    luc "Oh man, you look like a lobster!"
+    hide luca with dissolve
+    
+    show ranzal angry grimace1 with dissolve
+    show speechright anger at speechright_pos
+    play sound "audio/sound/anger.wav"
+    ranz "Why, I oughta clobber you!"
+    ranz "I can't believe you guys bailed on me after I put myself in the literal hot seat for you."
+    ranz "My skin's gonna be peeling for weeks!!"
+    hide speechright
+    hide ranzal with dissolve
+
+    show elisanne focused pout1 with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    elly "Well, how, praytell, were we supposed to explain the fact that we were spying on your bath?"
+    hide speechright
+    show elisanne surprised
+    elly "--Shh!  He's coming!  We're moving forward with Cleo's plan next!"
+    hide elisanne with dissolve
+
+    show berserker surprised at walk_in_right
+    show speechright note at speechright_pos
+    play sound "audio/sound/note.wav"
+    bers "Ah, good morning, my compatriots!"
+    show berserker at laugh_bob
+    bers "Ha ha, Ranzal, you genius!  Your dragon-heated steam bath was absolutely brilliant!  I've never slept better!"
+    bers "Might we partake in another after our hunt today?"
+    hide speechright
+    hide berserker with dissolve
+
+    show ranzal closed_neutral grimace1 with dissolve
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"
+    ranz "Ah, right, I almost forgot that I have to go trudging through the woods all day like this."
+    ranz "Thanks for that, Cleo..."
+    hide speechright
+    hide ranzal with dissolve
+
+    show berserker surprised with dissolve
+    show speechright question at speechright_pos
+    play sound "audio/sound/question.wav"
+    bers "My, Cleo, today's breakfast seems different than your usual.  I was rather looking forward to your scrambled eggs and bacon."
+    hide speechright
+    hide berserker with dissolve
+
+    show cleo zorder 50 with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    cle "Ah, well, I did tell you yesterday evening that I was running low on ingredients..."
+    hide speechright
+
+    image black = "images/backgrounds/black.png"
+    show black zorder 00 with dissolve
+    show cleo focused2 mutter1_closed
+    cle "(But mostly, if I put out solid food, you could potentially push it underneath your helmet and eat it that way!)"
+    cle "(I won't let you get away that easily!)"
+
+    hide black with dissolve
+    show cleo closed_focused smile1
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    cle "So, only porridge today, unfortunately."
+    cle "In fact, I may join you boys on your hunt this afternoon to do some foraging, ha ha..."
+    hide speechright
+    hide cleo with dissolve
+
+    show berserker with dissolve
+    bers "Hmm... and only one bowl and spoon left.  Well, I suppose I should help myself."
+    show berserker at bigger_dip
+    bers "Thank you for the meal; I shall take this to my room and return my dishes later."
+    hide berserker with dissolve
+
+    show cleo surprised with dissolve
+    cle "Are you certain?  Surely it would be more enjoyable while it's still piping hot."
+    hide cleo with dissolve
 
 
 

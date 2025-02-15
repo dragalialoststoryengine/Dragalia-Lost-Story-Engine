@@ -27,7 +27,7 @@ define luc = Character("Luca", callback=speaker("luc"))
     #  -->  show luca [keyword]
     #  List of mouth keywords:
     #     -->  grin1 (the default option), grin2, grin3, frown1, frown2, frown3, mutter1, frown5, shout1,
-    #          smile1, smile2, grimace1, sweat, grin1_closed
+    #          smile1, smile2, grimace1, sweat, grin1_closed, frown1_closed
 
     # *Writing dialogue for Luca*:
     #  --> luc "[Luca's line here]"
@@ -103,6 +103,9 @@ layeredimage luca:
 
         attribute frown1:
             "luca_frown1"
+
+        attribute frown1_closed:
+            "images/luca/mouths/100006_01_parts_c014.png"
 
         attribute smile1:
             "luca_smile1"

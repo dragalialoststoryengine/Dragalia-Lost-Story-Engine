@@ -326,6 +326,30 @@ transform laugh_bob:
 
 
 
+transform sink_down:
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
+
+    linear 0.2 pos (-0.034, 0.017)
+    linear 0.4 pos (0.034, 0.034)
+    linear 0.4 pos (-0.034, 0.051)
+    linear 0.2 pos (0.0, 0.068)
+
+
+transform jump_down:
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
+
+    linear 0.15 pos (0.0, -0.058)
+    linear 0.15 pos (0.0, 0.068)
+    linear 0.07 pos (0.0, 0.051)
+    linear 0.07 pos (0.0, 0.068)
+    linear 0.07 pos (0.0, 0.051)
+    linear 0.07 pos (0.0, 0.068)
+
+
+
+
 transform appear_left:
     alpha 0.0
     anchor (0.0, 0.0)
