@@ -348,6 +348,18 @@ transform jump_down:
     linear 0.07 pos (0.0, 0.068)
 
 
+transform searching_on_ground:
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
+
+    linear 0.4 pos (0.0, 0.051)
+    linear 0.2 xpos (0.02)
+    linear 0.4 xpos (-0.02)
+    linear 0.4 xpos (0.02)
+    linear 0.2 xpos (0.0)
+    linear 0.4 pos (0.0, 0.0)
+
+
 
 
 transform appear_left:

@@ -245,6 +245,10 @@ label charactertestfiles:
             "Sounds good!  Just don't expect him to take off his helmet or anything."
             jump berserker_character_procedures
 
+        "{color=#000000}Berserker's (Hunter){/color}":
+            "Lead the charge!  Happy Hunting!!!"
+            jump berserkerH_character_procedures
+
         "{color=#000000}Brunhilda's{/color}":
             "Ahh!  She knew you would come eventually, darling!"
             jump brunhilda_character_procedures

@@ -766,7 +766,7 @@ label berserkerstrueface:
     show cleo shocked pout1 with dissolve
     show speechright bad at speechright_pos
     play sound "audio/sound/bad.wav"
-    cle "Y—You just carry a straw around with you all the time?!"
+    cle "Y—You just carry a straw around with you at all times?!"
     hide speechright
     hide cleo with dissolve
 
@@ -776,6 +776,124 @@ label berserkerstrueface:
     bers "What?  I thought everyone wanted me to eat it as fast as possible."
     hide speechright
     hide berserker with dissolve
+
+    show elisanne flinch pout2 with dissolve
+    elly "He... He really drank an entire bowl of porridge with a straw..."
+    hide elisanne with dissolve
+
+    show luca askance grin2 with dissolve
+    luc "I don't know whether to be disgusted or impressed..."
+    hide luca with dissolve
+
+    show berserker surprised with dissolve
+    bers "...I'm very confused.  Everyone here seems to be so disappointed."
+    show berserker neutral at bigger_dip
+    bers "Here, Cleo, if you wash this bowl out, Lowen should be able to eat."
+    hide berserker with dissolve
+
+    show cleo shocked with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    cle "O-Oh, thank you...  I'll... get right on it..."
+    hide speechright
+    show cleo at walk_out_left
+    pause 1.0
+
+    show lowen flinch frown1 with dissolve
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"
+    low "Actually... After seeing that, I'm... not really hungry anymore..."
+    hide speechright
+    show lowen at walk_out_right
+    pause 1.0
+
+    show ranzal closed_neutral grimace1 with dissolve
+    ranz "...Honestly?  I don't blame ya, kid..."
+    hide ranzal with dissolve
+
+    show berserker surprised with dissolve
+    show speechright question at speechright_pos
+    play sound "audio/sound/question.wav"
+    bers "...What did I do?"
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"
+    show berserker downcast
+    bers "(sigh) And people wonder why I eat in private..."
+    hide speechright
+    hide berserker with dissolve
+
+    image woods_day = "images/backgrounds/Sty_bg_0073_100_00.png"
+    scene woods_day with fade
+
+    show berserker with dissolve
+    bers "..."
+    show berserker downcast at searching_on_ground
+    play sound "audio/sound/grass standing up.mp3"
+    bers "...Aha."
+    show berserker neutral
+    bers "They're faint, but I see boar tracks in this brush.  Our quarry went in this direction."
+    show berserker surprised
+    show speechright question at speechright_pos
+    play sound "audio/sound/question.wav"
+    bers "...Hm?"
+    hide speechright
+    hide berserker with dissolve
+
+    show luca askance mutter1 with dissolve
+    luc "Psst.  Maybe what we could try is..."
+    hide luca with dissolve
+    
+    show ranzal focused mutter1 with dissolve
+    ranz "Nah, that would never work.  But what if..."
+    hide ranzal with dissolve
+
+    show berserker with dissolve
+    bers "My friends, the boars lie this way.  Let us proceed with all haste."
+    hide berserker with dissolve
+
+    show luca relaxed frown1 with dissolve
+    luc "Oh, uh, great!"
+    show luca askance mutter1
+    luc "So anyway..."
+    hide luca with dissolve
+
+    show berserker downcast with dissolve
+    bers "..."
+    show berserker neutral
+    bers "...Afterwards, I was thinking we could duel to the death over our spoils.  How does that sound?"
+    hide berserker with dissolve
+
+    show ranzal relaxed smile2 with dissolve
+    ranz "—Huh?  Yeah, I'm ok with that."
+    show ranzal focused mutter1
+    ranz "But Luca, we've gotta..."
+    hide ranzal with dissolve
+
+    show berserker closed_neutral with dissolve
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"
+    bers "(Sigh)"
+    show berserker neutral
+    bers "When I agreed to go on a hunt with you, I was expecting at least Ranzal to take this seriously."
+    bers "But all you've been doing is whispering amongst yourselves this entire time while I do all the tracking."
+    bers "I am first and foremost a mercenary.  My time should be spent fighting, not supervising you lot."
+    show berserker surprised
+    show speechright question at speechright_pos
+    play sound "audio/sound/question.wav"
+    bers "And speaking of supervising... Cleo said she was foraging, but why has Elisanne accompanied us as well?"
+    hide speechright
+    hide berserker with dissolve
+
+    show elisanne surprised pout1 with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    elly "Oh, well, that's because... um... "
+    hide speechright
+    hide elisanne with dissolve
+
+
+
+
 
 
     scene black with fade
