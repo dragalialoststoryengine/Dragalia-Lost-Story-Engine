@@ -27,7 +27,7 @@ define low = Character("Lowen", callback=speaker("low"))
     #  -->  show lowen [keyword]
     #  List of mouth keywords:
     #     -->  smile1 (the default option), smile2, smile3, frown1, frown2, grimace1,
-    #          mutter1, shout1, closed_frown1
+    #          mutter1, shout1, closed_frown1, closed_smile1
 
     # *Writing dialogue for Lowen*:
     #  --> low "[Lowen's line here]"
@@ -85,6 +85,9 @@ layeredimage lowen:
 
         attribute smile1 default:
             "lowen_smile1"
+
+        attribute closed_smile1:
+            "images/lowen/mouths/110257_01_parts_c004.png"
 
         attribute frown1:
             "lowen_frown1"

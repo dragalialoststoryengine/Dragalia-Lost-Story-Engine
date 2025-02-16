@@ -387,7 +387,7 @@ label berserkerstrueface:
     show sranzal closed_neutral
     show speechright note at speechright_pos
     play sound "audio/sound/note.wav"
-    ranz "Plus, afterwards, when you're all warmed up, you can have some cold milk, and... whew man, it's tops!"
+    ranz "Plus, afterwards, when you're all warmed up, you can have some cold milk, and... whew, man, it's tops!"
     hide speechright
     hide sranzal with dissolve
 
@@ -428,7 +428,7 @@ label berserkerstrueface:
     show sranzal at sink_down
     play sound "audio/sound/splash small.mp3"
     ranz "Yyyyup, even just his ambient heat in the water can be a little extreme for some people."
-    ranz "So if it's not your cup 'o tea, I totally get--"
+    ranz "So if it's not your cup 'o tea, I totally get—"
     hide sranzal with dissolve
 
     show berserker with dissolve
@@ -443,7 +443,7 @@ label berserkerstrueface:
     show sranzal shocked shout1 with dissolve
     show speechright exclamation at speechright_pos
     play sound "audio/sound/exclamation.wav"
-    ranz "(splutter) Wh-Whoa, man!  You're really gonna do this in full plate armor--?!"
+    ranz "(splutter) Wh-Whoa, man!  You're really gonna do this in full plate armor—?!"
     hide speechright
     hide sranzal with dissolve
 
@@ -469,7 +469,7 @@ label berserkerstrueface:
     ranz "Uhh... for the record, I don't have any issue with the current temperature, guys..."
     hide speechright
     show sranzal shocked frown1
-    ranz "--Hey, it's getting a little hot in here..."
+    ranz "—Hey, it's getting a little hot in here..."
     show sranzal shout1
     show speechright exclamation at speechright_pos
     play sound "audio/sound/exclamation.wav"
@@ -583,7 +583,7 @@ label berserkerstrueface:
     elly "Well, how, praytell, were we supposed to explain the fact that we were spying on your bath?"
     hide speechright
     show elisanne surprised
-    elly "--Shh!  He's coming!  We're moving forward with Cleo's plan next!"
+    elly "—Shh!  He's coming!  We're moving forward with Cleo's plan next!"
     hide elisanne with dissolve
 
     show berserker surprised at walk_in_right
@@ -642,8 +642,140 @@ label berserkerstrueface:
     cle "Are you certain?  Surely it would be more enjoyable while it's still piping hot."
     hide cleo with dissolve
 
+    show lowen at run_in_right
+    low "Miss Cleo!  Am I too late for breakfast?"
+    hide lowen with dissolve
 
+    show cleo with dissolve
+    show cleo at disagree_shake
+    cle "I'm sorry, Lowen, but the last bowl was just taken.  You'll need to wait until someone turns theirs in."
+    hide cleo with dissolve
 
+    show lowen sad frown2 with dissolve
+    low "Aw..."
+    show lowen surprised smile2
+    low "Hi, Berserker!  Please finish up fast, ok?  That way I can eat too!"
+    hide lowen with dissolve
+
+    show cleo with dissolve
+    cle "Well, Berserker was just about to take his food to his room, actually, so it may take a while."
+    hide cleo with dissolve
+
+    show lowen sad frown2 zorder 50 with dissolve
+    low "Aw... but that might take forever..."
+
+    show black zorder 00 with dissolve
+    show lowen focused closed_smile1
+    show speechright note zorder 52 at speechright_pos
+    play sound "audio/sound/note.wav"
+    low "(I followed Miss Cleo's instructions to the letter!  This plan is so good!)"
+    show lowen closed_neutral
+    low "(I also wanna know what Berserker looks like, hee hee hee!!!)"
+    hide speechright
+    hide lowen with dissolve
+
+    show cleo focused2 mutter1_closed with dissolve
+    cle "(Berserker has a soft spot for children.  Roping Lowen into this was the right move.)"
+    cle "(Now Berserker has pressure to eat here, and this food is too watery to shove underneath his helmet.)"
+    show cleo angry
+    cle "(Which means... he'll have to take his helmet off!)"
+    
+    hide black with dissolve
+    hide cleo with dissolve
+
+    show berserker surprised with dissolve
+    bers "Well... under the present circumstances, I suppose the solution is obvious..."
+    show berserker at bigger_dip
+    bers "Here, Lowen, you may have my food instead.  I'll wait until more bowls become available."
+    hide berserker with dissolve
+
+    show cleo focused2 mutter1_closed zorder 50 with dissolve
+    show black with dissolve
+    cle "(Aha, I thought you might try to wiggle out of my trap this way!  Which is why I also coached Lowen to say...)"
+    hide black with dissolve
+    hide cleo with dissolve
+
+    show lowen sad mutter1 with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    low "W...Well, I'm trying to be more adult, so I need to own up to the fact that I came to breakfast late."
+    hide speechright
+    hide lowen with dissolve
+
+    show ranzal zorder 50 with dissolve
+    ranz "Good on ya, kid.  Sounds like you're on your way to manhood already!"
+    show ranzal shocked closed_frown1
+    show black with dissolve
+    show speechright exclamation zorder 51 at speechright_pos
+    play sound "audio/sound/exclamation.wav"
+    ranz "(Holy crap!  Cleo's thought of everything!  This might actually work!)"
+    hide speechright
+    hide black with dissolve
+    show ranzal neutral smile1
+    ranz "If ya wanna do the kid a favor, big guy, then just hurry up and eat so Cleo can wash your bowl."
+    hide ranzal with dissolve
+
+    show berserker askance with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    bers "Well... I wouldn't want to put a stumbling block in the path of Lowen's road to maturity..."
+    hide speechright
+    stop music fadeout 1.0
+    show berserker glint
+    bers "Very well!  I shall finish this porridge right here and now!"
+    hide berserker with dissolve
+
+    show black with dissolve
+
+    show cleo focused2 mutter1_closed with dissolve
+    show speechright exclamation at speechright_pos
+    play sound "audio/sound/exclamation.wav"
+    cle "(He's going to do it!)"
+    hide speechright
+    hide cleo with dissolve
+
+    show ranzal shocked closed_frown1 with dissolve
+    ranz "(He's actually gonna do it!)"
+    hide ranzal with dissolve
+
+    show elisanne surprised frown1_closed
+    elly "(Come on...)"
+    hide elisanne with dissolve
+
+    show luca shocked frown1_closed
+    luc "(Show me the embarrassing birthmark!  No, no, snaggletooth city, here we come!!!!)"
+    hide luca with dissolve
+
+    show lowen focused closed_frown1
+    low "(Any second now...)"
+    hide lowen with dissolve
+
+    show berserker with dissolve
+    hide black with dissolve
+    pause 1.0
+    bers "..."
+
+    show berserker downcast
+    play sound "audio/sound/straw slurp.mp3"
+    pause 6.0
+
+    hide berserker with dissolve
+
+    play music "audio/music/Cinderella Step (Story Version A) loop.mp3" fadeout 1.0
+
+    show cleo shocked pout1 with dissolve
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"
+    cle "Y—You just carry a straw around with you all the time?!"
+    hide speechright
+    hide cleo with dissolve
+
+    show berserker surprised with dissolve
+    show speechright question at speechright_pos
+    play sound "audio/sound/question.wav"
+    bers "What?  I thought everyone wanted me to eat it as fast as possible."
+    hide speechright
+    hide berserker with dissolve
 
 
     scene black with fade
