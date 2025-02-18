@@ -1044,7 +1044,8 @@ label berserkerstrueface:
     hide luca with dissolve
 
 
-
+    "If you're reading this, it means I'm not finished with this story yet!  Sorry!"
+    "I hope you enjoyed it so far and are looking forward to its conclusion!"
 
 
 
