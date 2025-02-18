@@ -822,8 +822,12 @@ label berserkerstrueface:
     hide speechright
     hide berserker with dissolve
 
+    stop music fadeout 1.0
+
     image woods_day = "images/backgrounds/Sty_bg_0073_100_00.png"
     scene woods_day with fade
+
+    play music "audio/music/Utopia.flac" fadeout 1.0
 
     show berserker with dissolve
     bers "..."
@@ -887,9 +891,158 @@ label berserkerstrueface:
     show elisanne surprised pout1 with dissolve
     show speechright sweat at speechright_pos
     play sound "audio/sound/sweat.wav"
-    elly "Oh, well, that's because... um... "
+    elly "Oh, well, that is because... um... "
     hide speechright
     hide elisanne with dissolve
+
+    show fcleo surprised pout1 with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    cle "...because... Elisanne is joining me in foraging!"
+    cle "Yes, she wants to... learn more survival tips for long missions, where rations could run out."
+    hide speechright
+    hide fcleo with dissolve
+
+    show elisanne surprised smile1 with dissolve
+    elly "Y-Yes, exactly!!"
+    elly "And, on that subject, I have questions for you, Berserker."
+    hide elisanne with dissolve
+
+    show berserker surprised with dissolve
+    bers "Oh?  Such as?"
+    hide berserker with dissolve
+
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    show elisanne flinch smile1 with dissolve
+    elly "S-Such as... do you not find hunting in full plate armor difficult?"
+    elly "A-After all, I imagine that the rattling of steel might alert your quarry."
+    hide speechright
+    hide elisanne with dissolve
+
+    show berserker with dissolve
+    bers "Hmm... I suppose so, but I tend not to rely on stealth to hunt."
+    show berserker glint
+    bers "I prefer to confront my prey head-on!  Hahahaha!"
+    show berserker neutral
+    bers "...Or, if that doesn't work, I'll set up a snare or trap."
+    hide berserker with dissolve
+
+    show elisanne flinch smile1 with dissolve
+    elly "A-Ah, I see..."
+    show elisanne focused frown1_closed
+    elly "..."
+    show elisanne surprised pout1
+    elly "Oh, um, Berserker!  Your helmet appears to have some... uh... leaves stuck to it!"
+    hide elisanne with dissolve
+
+    show berserker surprised with dissolve
+    bers "Hm..."
+    show berserker at bigger_dip
+    bers "Did I get them?"
+    hide berserker with dissolve
+
+    show elisanne surprised pout1 with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    elly "N-No...  Um... well..."
+    elly "...Perhaps you could... take the helmet off?  It would be easier to clean that way."
+    hide speechright
+    hide elisanne with dissolve
+
+    show luca askance grin2 with dissolve
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"
+    luc "Yeesh, this is painful to watch..."
+    hide speechright
+    hide luca with dissolve
+
+    show berserker askance with dissolve
+    bers "Ah, you worry too much, Elisanne.  A few leaves shan't stop me from swinging my sword!"
+    hide berserker with dissolve
+
+    show elisanne flinch smile1 with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    elly "I... suppose not, ha ha... ha..."
+    hide speechright
+    elly "But... um... surely you'll need to take off your gloves to do the fine work of tying knots in snares?"
+    hide elisanne with dissolve
+
+    show berserker surprised with dissolve
+    bers "Well, I assume Luca would be much more proficient than me in that regard anyway."
+    bers "I had planned to leave the trapping to him for this outing..."
+    hide berserker with dissolve
+
+    stop music fadeout 2.0
+
+    show luca angry frown1 with dissolve
+    luc "Ok, Elly had her turn.  It's time for me to step in, everyone."
+    hide luca with dissolve
+
+    show fcleo surprised shout1 with dissolve
+    show speechright exclamation at speechright_pos
+    play sound "audio/sound/exclamation.wav"
+    cle "Luca, wait, you can't simply—"
+    hide speechright
+    hide fcleo with dissolve
+
+    play music "audio/music/Story Bout B intro.flac"
+    queue music "audio/music/Story Bout B.flac"
+
+    show berserker zorder 2 with dissolve
+    luc "Alley-oop!"
+    show luca zorder 1 at lunge_in_left_to_leftpos
+    show speechright exclamation zorder 3 at speechright_pos
+    play sound "audio/sound/exclamation.wav"    
+    bers "What—?! Luca, have you taken leave of your senses?!"
+    hide speechright
+    show luca angry shout1 at rapid_shake_left
+    show berserker at rapid_shake
+    luc "I'm... taking... your helmet... off!!!"
+    luc "Geez, this thing is really stuck on!"
+    show speechright sweat zorder 3 at speechright_pos
+    play sound "audio/sound/sweat.wav"        
+    bers "Cease this jackanapery at once!"
+    hide speechright
+    hide berserker
+    show berserker glint
+    play sound "audio/sound/punch.mp3"
+    show luca at lunge_out_left_from_leftpos
+    luc "Ow!! ...Ooof!"
+    show berserker downcast
+    hide luca
+    bers "Hmph.  A just punishment for leaping upon me for no reason."
+    show berserker askance
+    show speechright question zorder 3 at speechright_pos
+    play sound "audio/sound/question.wav"
+    bers "Hm?  What is this fluid on my helmet?"
+    bers "(Sniff) It smells citrusy sweet as well..."
+    hide speechright
+    hide berserker with dissolve
+
+    show luca with dissolve
+    show luca at disagree_shake
+    luc "That's right.  That's because it's my backup plan!"
+    luc "How do you like my bee balm nectar?  Pollinating insects go crazy for the stuff."
+    show luca focused2 grin2
+    luc "Which means..."
+    hide luca with dissolve
+
+    show berserker with dissolve
+    bers "Hold a moment... did you say... BEE balm nectar?"
+    play audio "audio/sound/bee swarm.mp3"
+    show berserker surprised at disagre_shake
+    bers "By Elysium, they're EVERYWHERE!!!"
+    hide berserker with dissolve
+
+    show luca with dissolve
+    show speechright note at speechright_pos
+    play sound "audio/sound/note.wav"
+    luc "Yup!  And the only way to get rid of them is to ditch the helmet!"
+    hide speechright
+    hide luca with dissolve
+
 
 
 

@@ -74,6 +74,18 @@ transform lunge_out_left:
     parallel:
         linear 0.25 alpha 0.0
 
+
+transform lunge_out_left_from_leftpos:
+    
+    anchor (0.0, 0.0)
+    pos (-0.35, 0.0)
+
+    alpha 1.0
+    parallel:
+        linear 0.35 xpos -1.0
+    parallel:
+        linear 0.25 alpha 0.0
+
 transform lunge_out_right:
 
     anchor (0.0, 0.0)
@@ -84,6 +96,19 @@ transform lunge_out_right:
         linear 0.5 xpos 1.0
     parallel:
         linear 0.25 alpha 0.0
+
+transform lunge_out_right_from_rightpos:
+
+    anchor (0.0, 0.0)
+    pos (0.35, 0.0)
+
+    alpha 1.0
+    parallel:
+        linear 0.35 xpos 1.0
+    parallel:
+        linear 0.25 alpha 0.0
+
+
 
 transform fall_down:
     # Duration:  0.5
@@ -125,6 +150,36 @@ transform lunge_in_right:
         linear 0.25 xpos 0.0
     parallel:
         linear 0.25 alpha 1.0
+
+transform lunge_in_right_to_rightpos:
+
+    anchor (0.0, 0.0)
+
+    pos (1.0, 0.0)
+    alpha 0.0
+
+    linear 0.25 xpos 0.5
+
+    parallel:
+        linear 0.05 pos (0.35, 0)
+    parallel:
+        linear 0.05 alpha 1.0
+
+transform lunge_in_left_to_leftpos:
+
+    anchor (0.0, 0.0)
+
+    pos (-1.0, 0.0)
+    alpha 0.0
+
+    linear 0.25 xpos -0.5
+
+    parallel:
+        linear 0.05 pos (-0.35, 0)
+    parallel:
+        linear 0.05 alpha 1.0
+
+
 
 transform big_swing_clockwise:
 
@@ -359,7 +414,30 @@ transform searching_on_ground:
     linear 0.2 xpos (0.0)
     linear 0.4 pos (0.0, 0.0)
 
+transform rapid_shake:
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
+    
+    linear 0.1 xpos (0.005)
+    linear 0.1 xpos (0)
+    repeat
 
+
+transform rapid_shake_right:
+    anchor (0.0, 0.0)
+    pos (0.35, 0.0)
+    
+    linear 0.1 xpos (0.355)
+    linear 0.1 xpos (0.35)
+    repeat
+
+transform rapid_shake_left:
+    anchor (0.0, 0.0)
+    pos (-0.35, 0.0)
+    
+    linear 0.1 xpos (-0.345)
+    linear 0.1 xpos (-0.35)
+    repeat
 
 
 transform appear_left:

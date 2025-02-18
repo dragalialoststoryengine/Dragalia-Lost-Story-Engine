@@ -268,6 +268,10 @@ label charactertestfiles:
         "{color=#000000}Cleo's{/color}":
             "Of course.  She will be with you presently, after she finishes preparing the evening's meal."
             jump cleo_character_procedures
+        
+        "{color=#000000}Cleo's (Forager){/color}":
+            "Of course!  We'd best find some choice ingredients for tonight's meal!"
+            jump cleoF_character_procedures
 
         "{color=#000000}Curran's{/color}":
             "Gotcha.  I'll bring you right to his fest tile."
