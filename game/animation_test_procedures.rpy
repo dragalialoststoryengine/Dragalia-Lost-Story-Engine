@@ -9,6 +9,45 @@ transform bg_jitter:
     linear 0.05 pos (0.0, -0.005)
     linear 0.05 pos (0.0, 0.0)
 
+
+transform bg_jitter_long:
+    anchor (0.0, 0.0)
+    pos (0.0, 0.0)
+
+    linear 0.05 pos (0.005, 0.00)
+    linear 0.05 pos (-0.005, 0.00)
+    linear 0.05 pos (0.0, -0.005)
+    linear 0.05 pos (0.0, 0.0)
+    linear 0.05 pos (0.005, 0.00)
+    linear 0.05 pos (-0.005, 0.00)
+    linear 0.05 pos (0.0, -0.005)
+    linear 0.05 pos (0.0, 0.0)
+    linear 0.05 pos (0.005, 0.00)
+    linear 0.05 pos (-0.005, 0.00)
+    linear 0.05 pos (0.0, -0.005)
+    linear 0.05 pos (0.0, 0.0)
+    linear 0.05 pos (0.005, 0.00)
+    linear 0.05 pos (-0.005, 0.00)
+    linear 0.05 pos (0.0, -0.005)
+    linear 0.05 pos (0.0, 0.0)
+    linear 0.05 pos (0.005, 0.00)
+    linear 0.05 pos (-0.005, 0.00)
+    linear 0.05 pos (0.0, -0.005)
+    linear 0.05 pos (0.0, 0.0)
+    linear 0.05 pos (0.005, 0.00)
+    linear 0.05 pos (-0.005, 0.00)
+    linear 0.05 pos (0.0, -0.005)
+    linear 0.05 pos (0.0, 0.0)
+    linear 0.05 pos (0.005, 0.00)
+    linear 0.05 pos (-0.005, 0.00)
+    linear 0.05 pos (0.0, -0.005)
+    linear 0.05 pos (0.0, 0.0)
+    linear 0.05 pos (0.005, 0.00)
+    linear 0.05 pos (-0.005, 0.00)
+    linear 0.05 pos (0.0, -0.005)
+    linear 0.05 pos (0.0, 0.0)
+
+
 #Combat Transforms Here
 
 transform trudge_in_left:

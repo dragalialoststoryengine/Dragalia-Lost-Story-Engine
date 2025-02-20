@@ -21,7 +21,7 @@ define luc = Character("Luca", callback=speaker("luc"))
     #  -->  show luca [keyword]
     #  List of eye keywords:
     #     -->  focused (the default option), focused2, relaxed, relaxed_closed, shocked, surprised,
-    #          blushing, flinch, askance, angry, crying, crying2, sad
+    #          blushing, flinch, flinch_closed, askance, angry, crying, crying2, sad
 
     # *Changing Luca's mouth*:
     #  -->  show luca [keyword]
@@ -65,6 +65,9 @@ layeredimage luca:
 
         attribute flinch:
             "luca_flinch_eyes"
+
+        attribute flinch_closed:
+            "images/luca/faces/100006_01_parts_c019.png"
 
         attribute shocked:
             "luca_shocked_eyes"

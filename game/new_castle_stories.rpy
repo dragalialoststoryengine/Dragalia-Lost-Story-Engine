@@ -730,6 +730,7 @@ label berserkerstrueface:
     show cleo focused2 mutter1_closed with dissolve
     show speechright exclamation at speechright_pos
     play sound "audio/sound/exclamation.wav"
+    play music "audio/sound/heartbeat.mp3" volume 10.0 # ShidenBeatsMusic
     cle "(He's going to do it!)"
     hide speechright
     hide cleo with dissolve
@@ -752,6 +753,7 @@ label berserkerstrueface:
 
     show berserker with dissolve
     hide black with dissolve
+    stop music fadeout 1.0
     pause 1.0
     bers "..."
 
@@ -922,7 +924,7 @@ label berserkerstrueface:
 
     show berserker with dissolve
     bers "Hmm... I suppose so, but I tend not to rely on stealth to hunt."
-    show berserker glint
+    show berserker glint at laugh_bob
     bers "I prefer to confront my prey head-on!  Hahahaha!"
     show berserker neutral
     bers "...Or, if that doesn't work, I'll set up a snare or trap."
@@ -966,7 +968,7 @@ label berserkerstrueface:
     play sound "audio/sound/sweat.wav"
     elly "I... suppose not, ha ha... ha..."
     hide speechright
-    elly "But... um... surely you'll need to take off your gloves to do the fine work of tying knots in snares?"
+    elly "But... um... surely you'll need to take off your gloves to do the fine work of tying knots for the snares?"
     hide elisanne with dissolve
 
     show berserker surprised with dissolve
@@ -1032,7 +1034,7 @@ label berserkerstrueface:
     show berserker with dissolve
     bers "Hold a moment... did you say... BEE balm nectar?"
     play audio "audio/sound/bee swarm.mp3"
-    show berserker surprised at disagre_shake
+    show berserker surprised at disagree_shake
     bers "By Elysium, they're EVERYWHERE!!!"
     hide berserker with dissolve
 
@@ -1043,11 +1045,334 @@ label berserkerstrueface:
     hide speechright
     hide luca with dissolve
 
+    show berserker surprised with dissolve
+    show speechright anger at speechright_pos
+    play sound "audio/sound/anger.wav"
+    bers "What?!  Why would you—?!  Argh, you will answer for this later!"
+    hide speechright
+    show berserker at rapid_shake
+    play audio "audio/sound/bee swarm.mp3"
+    bers "In any case, I must— OW!  Off me at once, you creatures!!  OW!!!"
+    bers "Augh!  My helmet is stuck!!!  I need to unfasten—"
+    show speechright exclamation at speechright_pos
+    play sound "audio/sound/exclamation.wav"
+    queue sound "audio/sound/bee swarm.mp3"    
+    bers "—OW!!  OH, GOD, THIS IS HELLISH!"
+    bers "—NOOOO!!!  MY EYES!!!  THE BEES ARE IN MY EYES!!!"
+    bers "WHY DOES THIS KEEP HAPPENING TO MEEEEE?!?"
+    hide speechright
+    show berserker at lunge_out_right
+    pause 1.0
+    hide berserker
 
-    "If you're reading this, it means I'm not finished with this story yet!  Sorry!"
-    "I hope you enjoyed it so far and are looking forward to its conclusion!"
+    show luca shocked frown1 with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"    
+    luc "I... uh... pictured this going differently in my head..."
+    hide speechright
+    hide luca with dissolve
 
+    show ranzal shocked shout1 with dissolve
+    ranz "No KIDDING, moron!!!  We have to help him!!"
+    ranz "Berserker, I'm coming, buddy!!!"
+    hide ranzal with dissolve
 
+    show berserker surprised at lunge_in_left
+    pause 0.75
+    show berserker surprised at lunge_out_right
+    bers "AAAAAAHHHHH!!!!"
+    show ranzal shocked shout1 at lunge_in_left_to_leftpos
+    ranz "Just hold still, big guy—!"
+    show berserker surprised at lunge_in_right
+    pause 0.5
+    play sound "audio/sound/punch.mp3"
+    show berserker at rapid_shake
+    show ranzal at lunge_out_left_from_leftpos
+    ranz "—OOOF!!!"
+    show berserker at lunge_out_left
+    pause 0.5
+    hide ranzal
+    hide berserker
+
+    show elisanne surprised shout1 with dissolve
+    elly "Never fear!  I will chase the bees away with my spear attacks!"
+    hide elisanne with dissolve
+
+    show fcleo surprised shout1 with dissolve
+    show speechright exclamation at speechright_pos
+    play sound "audio/sound/exclamation.wav"    
+    cle "No, Elisanne, that will simply—!!!"
+    hide speechright
+    hide fcleo with dissolve
+
+    show berserker surprised with dissolve
+    play sound "audio/sound/bee swarm.mp3"      
+    bers "Auuugggh, make it stop!!!"
+    show elisanne angry shout1 at lunge_in_left_to_leftpos
+    pause 0.25
+    play sound "audio/sound/blade slice flesh.mp3"
+    show berserker at rapid_shake
+    elly "Hiyaaaaa!!!"
+    bers "Urrrggghhh...."
+    show berserker at fall_down
+    pause 0.5
+    show elisanne surprised frown1
+    show woods_day at bg_jitter
+    play sound "audio/sound/grass standing up.mp3"
+    elly "...Berserker?  Oh dear..."
+    bers "Why... me..."
+    bers "..."
+    hide elisanne with dissolve
+
+    show fcleo closed_angry closed_frown1 with dissolve
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"
+    cle "(Sigh)"
+    show fcleo focused frown1
+    hide speechright
+    cle "At least now he won't have to be conscious for the rest of this ordeal."
+    show fcleo shout1
+    cle "Luca!  Make smoke to drive away the bees!  I'll focus on healing him!!"
+    hide fcleo with dissolve
+
+    show luca shocked frown1 with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"    
+    luc "R-Right..."
+    hide speechright
+    hide luca with dissolve
+
+    stop music fadeout 1.0
+
+    image halidom_bedroom = "images/backgrounds/Sty_bg_0049_100_00.png"
+    scene halidom_bedroom with fade
+
+    play music "audio/music/Yumemiteta no Atashi (Story Version A) intro.flac"
+    queue music "audio/music/Yumemiteta no Atashi (Story Version A).flac"
+
+    show berserker downcast with dissolve
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"    
+    bers "Urghhh... I think I may be more bee-sting than man at this point..."
+    hide speechright
+    hide berserker with dissolve
+
+    show fcleo pained frown1 with dissolve
+    cle "Yes... On the bright side, because the bees were lured out of their hive, I was able to collect honey to make a salve."
+    show fcleo sad
+    cle "If you apply this to the stings, it should help to reduce the swelling and inflammation."
+    hide fcleo with dissolve
+
+    show berserker askance with dissolve    
+    show berserker at disagree_shake
+    bers "Ah, you have my gratitude... However... my head is so swollen I cannot even remove my helmet to apply it."
+    hide berserker with dissolve
+
+    show ranzal flinch grimace1 with dissolve
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"    
+    ranz "Oof... I'm so sorry, buddy..."
+    hide speechright
+    hide ranzal with dissolve
+
+    show berserker with dissolve
+    show speechright question at speechright_pos
+    play sound "audio/sound/question.wav"    
+    bers "So all of this happened merely because you wanted to see my face?"
+    hide speechright
+    bers "If this comes up in the future, just ask me directly.  It would have saved me much grief..."
+    hide berserker with dissolve
+
+    show luca sad sweat with dissolve
+    luc "Y-Yeah, you're right...  It got built up as this big forbidden mystery..."
+    luc "...but we all took it way too far.  Sorry."
+    hide luca with dissolve
+
+    show elisanne angry frown1 with dissolve
+    show speechright anger at speechright_pos
+    play sound "audio/sound/anger.wav"  
+    elly "What do you mean, 'We ALL took it way too far?'  YOU were the one who assaulted him with bees!!!"
+    hide speechright
+    hide elisanne with dissolve
+
+    show luca shocked sweat with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    luc "H-Hey, I just said I was sorry for that!"
+    hide speechright
+    hide luca with dissolve
+
+    show fcleo closed_angry frown1 with dissolve
+    cle "...No, we're all somewhat at fault for this.  I for one should have had more sense than to pry."
+    cle "Instead, I orchestrated a whole plot involving oatmeal and put Berserker on the spot."
+    show fcleo pained
+    cle "As it was, Ranzal was the only one who actually did anything NICE for him."
+    hide fcleo with dissolve
+
+    show berserker surprised with dissolve
+    show berserker at laugh_bob
+    bers "Heh... At some level, I should be flattered that you were so intrigued by me."
+    show berserker at disagree_shake
+    bers "However, my appearance isn't some big secret.  To be frank, I have a rather plain-looking face."
+    bers "If I had to explain why I wear my armor at all times... I suppose it's because I want to leave the past in the past."
+    show berserker askance
+    bers "Before I donned this armor, I didn't lead a life that I was proud of.  I made a lot of mistakes."
+    bers "When I became a mercenary, I decided that I wanted to put my past to rest and start a new life."
+    show berserker neutral
+    stop music fadeout 1.0
+    play music "audio/music/CRASHER (Story Version A) loop.mp3" fadein 3.0
+    bers "So I took on a new identity.  I wanted my armor to become a symbol of my resolve to fight, and my desire to face strong foes."
+    bers "And I've found a lot of joy in my new life.  Deadly struggles allow me, however briefly, to experience the zeal for life pulsing in my veins."
+    bers "And it also was under this identity that I came to join the Halidom and found a new reason to wield my sword."
+    bers "A cause that was not just worth dying for, but worth LIVING for."
+    bers "So... I've decided that I want to BECOME the armor that people see.  To be reborn not as a man, but as a symbol of valor and righteous battle."
+    show berserker askance at laugh_bob
+    bers "Although... heh, I suppose there are more mundane reasons as well.  I would be lying if I said I wasn't proud of my armor."
+    bers "It's gotten me through many a battle, and I can't deny that the awe, fear and respect that it inspires in others is... enjoyable."
+    show berserker neutral
+    bers  "So fret not.  I suppose that, in a way, my current predicament is merely the price of my own vanity."
+    hide berserker with dissolve
+
+    show ranzal grin1 with dissolve
+    ranz "Well, as far as my vote goes, it's a damn fine suit of armor.  For a damn fine warrior.  It suits you, buddy."
+    hide ranzal with dissolve
+
+    show berserker surprised with dissolve
+    show speechright note at speechright_pos
+    play sound "audio/sound/note.wav"
+    bers "Heh... You have my gratitude, friend."
+    hide speechright
+    hide berserker with dissolve
+
+    show luca sad frown1 with dissolve
+    luc "Still... I feel really bad leaving things like this.  I was definitely way out of line."
+    luc "Are you sure there isn't anything I can do to make it up to you?"
+    hide luca with dissolve
+
+    show berserker askance with dissolve
+    bers "Hmmm..."
+    show berserker neutral
+    bers "In that case, I would simply ask that you accompany me the next time I go hunting."
+    show berserker at laugh_bob
+    bers "Our hunting trip today was cut short prematurely, after all."
+    hide berserker with dissolve
+
+    show luca relaxed_closed grin1 with dissolve
+    show speechright note at speechright_pos
+    play sound "audio/sound/note.wav"
+    luc "Heh, is that all?  Sure, no sweat!"
+    show luca relaxed
+    luc "You've got yourself a deal, man!"
+    hide speechright
+    hide luca with dissolve
+
+    stop music fadeout 2.5
+    show ranzal shocked closed_frown1 with dissolve
+    ranz "..."
+    hide ranzal with dissolve
+    show elisanne surprised frown1_closed
+    elly "..."
+    hide elisanne with dissolve
+    show fcleo focused frown1 with dissolve
+    cle "..."
+    show fcleo closed_angry mutter1
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"
+    cle "...I'll have the medical supplies ready for when you return..."
+    hide speechright
+    hide fcleo with dissolve
+
+    show luca surprised mutter1 with dissolve
+    show speechright question at speechright_pos
+    play sound "audio/sound/question.wav"
+    luc "...What's with you guys?  The mood got so somber all of a sudden."
+    luc "Like Berserker said, we're just gonna go out hunting.  No biggie."
+    hide speechright
+    hide luca with dissolve
+
+    image cliff_storm = "images/backgrounds/Sty_bg_0038_400_00.png"
+    scene cliff_storm with fade
+
+    show luca shocked sweat with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    luc "TH... THIS is what you're hunting?!?"
+    hide speechright
+    hide luca with dissolve
+
+    play music "audio/music/Legend of Flight Fatalis intro.mp3" fadein 2.0
+    queue music "audio/music/Legend of Flight Fatalis.mp3"
+
+    show dreadking_rathalos at trudge_in_left
+    pause 0.75
+    show cliff_storm at bg_jitter
+    pause 0.8
+    show cliff_storm at bg_jitter
+    pause 0.8
+    show cliff_storm at bg_jitter
+    play sound "audio/sound/dreadking rathalos roar.mp3" volume 0.6
+    show cliff_storm at bg_jitter_long
+    dkr "ROAAAAAAAAAAAAAAAAAAR!!!!"
+    hide dreadking_rathalos with dissolve
+
+    show hberserker at laugh_bob with dissolve
+    pause 0.6
+    show hberserker at laugh_bob
+    pause 0.6
+    show hberserker at laugh_bob
+    bers "Hahaha.... HAHAHAHAHA!!!  Did you feel the beast's roar coarse through your entire BODY?!?"
+    show hberserker glint
+    bers "That's how you know he's a FEISTY one!!!  Good, good!!!  GOOD!!!"
+    hide hberserker with dissolve
+
+    show luca flinch_closed shout1 at disagree_shake with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    luc "Bad, bad, BAD!!!  This is BAD!!!  We're gonna die!!!  We're totally gonna die!!!"
+    hide speechright
+    hide luca with dissolve
+
+    show hberserker glint with dissolve
+    show speechright note at speechright_pos
+    play sound "audio/sound/note.wav"
+    bers "Perhaps!  And if so, it will be an honor to die gloriously with you, my friend!!!"
+    hide speechright
+    hide hberserker with dissolve
+    play sound "audio/sound/blade swing.mp3"
+    show hberserker_sword with dissolve
+    bers "But let us attempt to carve out a future for ourselves with blade and bow!!!"
+    show hberserker_sword glint
+    bers "Now ready yourself!!!  This fight will take every ounce of strength we have!!!"
+    hide hberserker_sword with dissolve
+
+    show luca flinch_closed shout1 at disagree_shake with dissolve
+    show speechright sweat at speechright_pos
+    play sound "audio/sound/sweat.wav"
+    luc "Literally NO amount of preparation could POSSIBLY make me ready for this!!!"
+    luc "Is this still because of the bees?  I'm SO sorry, man!!  I'M SORRY!!!  PLEASE!!!"
+    hide speechright
+    hide luca with dissolve
+
+    show hberserker_sword glint at rapid_shake with dissolve
+    bers "My pulse races!!!  My body trembles!!!  The heat of the beast's dread breath washes over me!!!"
+    bers "YES!!  TRULY, THIS IS WHAT IT MEANS TO BE ALIVE!!!"
+    show hberserker_sword at laugh_bob
+    pause 0.6
+    show hberserker_sword at laugh_bob
+    pause 0.6
+    show hberserker_sword at laugh_bob
+    bers "HAHAHAHAHAAHAHAAHAHAHAHA!!!  COME AT ME, BEAST!!!  LET US SAVOR THIS FATAL DANCE!!!"
+
+    show hberserker_sword at big_swing_counterclockwise
+    pause 2.0
+    show hberserker_sword at thrust_forward
+    play sound "audio/sound/blade slice flesh.mp3"
+    queue sound "audio/sound/blade slice flesh.mp3" volume 1.3
+    queue sound "audio/sound/blade slice flesh.mp3" volume 1.6
+    queue sound "audio/sound/dreadking rathalos roar.mp3" volume 0.6
+    show cliff_storm at bg_jitter_long
+    dkr "ROAAAAAAAAAAAAAAAAAAR!!!!"
+    hide hberserker_sword with dissolve
 
 
     scene black with fade

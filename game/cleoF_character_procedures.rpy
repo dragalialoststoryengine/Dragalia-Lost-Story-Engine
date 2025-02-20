@@ -27,7 +27,7 @@
     #  -->  show fcleo [keyword]
     #  List of eye keywords:
     #     -->  relaxed (default), angry, flinch, focused, neutral, pained, sad, surprised
-    #          closed_relaxed
+    #          closed_relaxed, closed_angry
 
     # *Changing Forager Cleo's mouth*:
     #  -->  show fcleo [keyword]
@@ -90,6 +90,9 @@ layeredimage fcleo:
             
         attribute angry:
             "fcleo_angry_eyes"
+        
+        attribute closed_angry:
+            "images/cleo_forager/faces/100004_18_parts_c027.png"
 
 
 
