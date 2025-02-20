@@ -37,7 +37,7 @@ label newcastlestoriesmenu:
 # The game starts here.
 label berserkerstrueface:
 
-    play music "audio/music/Utopia loop.mp3" fadeout 1.0
+    play music "audio/music/Utopia loop.mp3" fadein 1.0
 
     image greathall_night = "images/backgrounds/Sty_bg_0072_300_00.png"
     scene greathall_night with fade
@@ -244,9 +244,7 @@ label berserkerstrueface:
     cle "And is this even something we ought to be prying into?  I'm sure he has reasons to maintain his privacy."
     hide cleo with dissolve
 
-    show elisanne focused frown2 with dissolve
-    pause 0.5
-    show elisanne at disagree_shake
+    show elisanne focused frown2 at disagree_shake with dissolve
     elly "Th-That's right!  Surely it would be more mature to let the matter rest."
     hide elisanne with dissolve
 
@@ -321,7 +319,7 @@ label berserkerstrueface:
     hide berserker with dissolve
 
     show sranzal relaxed smile1 with dissolve
-    ranz "Well, about that... I'm really just cashing in a favor from my big ol' pal Kagutsuchi over there."
+    ranz "Well, about that... I'm really just cashing in a favor from my ol' pal Kagutsuchi over there."
     hide sranzal with dissolve
 
     show kagutsuchi with dissolve
@@ -378,7 +376,7 @@ label berserkerstrueface:
 
     show berserker askance with dissolve
     bers "Hmm... I suppose I do need to be rested and refreshed for tomorrow's outing..."
-    show berserker 
+    show berserker neutral
     bers "Still, I generally prefer to bathe in my quarters.  Is this dragon-bath truly something special?"
     hide berserker with dissolve
 
@@ -415,9 +413,9 @@ label berserkerstrueface:
     hide speechright
     hide sranzal with dissolve
 
+    show berserker surprised with dissolve
     show speechright exclamation at speechright_pos
     play sound "audio/sound/exclamation.wav"
-    show berserker surprised with dissolve
     bers "...!"
     hide speechright
     hide berserker with dissolve
@@ -457,7 +455,7 @@ label berserkerstrueface:
     hide berserker with dissolve
 
     show kagutsuchi with dissolve
-    show speechright anger at speechright_pos
+    show speechright anger at speechright_upperrightpos
     play sound "audio/sound/anger.wav"
     kagut "Hmph.  As you wish."
     hide speechright
@@ -612,7 +610,7 @@ label berserkerstrueface:
     hide berserker with dissolve
 
     show cleo zorder 50 with dissolve
-    show speechright sweat at speechright_pos
+    show speechright sweat zorder 51 at speechright_pos
     play sound "audio/sound/sweat.wav"
     cle "Ah, well, I did tell you yesterday evening that I was running low on ingredients..."
     hide speechright
@@ -968,7 +966,7 @@ label berserkerstrueface:
     play sound "audio/sound/sweat.wav"
     elly "I... suppose not, ha ha... ha..."
     hide speechright
-    elly "But... um... surely you'll need to take off your gloves to do the fine work of tying knots for the snares?"
+    elly "But... um... surely you'll need to take off your gloves to do the delicate work of tying knots for the snares?"
     hide elisanne with dissolve
 
     show berserker surprised with dissolve
@@ -1061,6 +1059,7 @@ label berserkerstrueface:
     bers "—NOOOO!!!  MY EYES!!!  THE BEES ARE IN MY EYES!!!"
     bers "WHY DOES THIS KEEP HAPPENING TO MEEEEE?!?"
     hide speechright
+    play sound "audio/sound/grass steps armor running.mp3"
     show berserker at lunge_out_right
     pause 1.0
     hide berserker
@@ -1077,12 +1076,15 @@ label berserkerstrueface:
     ranz "Berserker, I'm coming, buddy!!!"
     hide ranzal with dissolve
 
+    play sound "audio/sound/grass steps armor running.mp3"
+    queue sound "audio/sound/grass steps armor running.mp3"
     show berserker surprised at lunge_in_left
     pause 0.75
     show berserker surprised at lunge_out_right
     bers "AAAAAAHHHHH!!!!"
     show ranzal shocked shout1 at lunge_in_left_to_leftpos
     ranz "Just hold still, big guy—!"
+    play sound "audio/sound/grass steps armor running.mp3"
     show berserker surprised at lunge_in_right
     pause 0.5
     play sound "audio/sound/punch.mp3"
@@ -1105,13 +1107,14 @@ label berserkerstrueface:
     hide speechright
     hide fcleo with dissolve
 
-    show berserker surprised with dissolve
+    show berserker surprised at rapid_shake with dissolve
     play sound "audio/sound/bee swarm.mp3"      
     bers "Auuugggh, make it stop!!!"
     show elisanne angry shout1 at lunge_in_left_to_leftpos
     pause 0.25
     play sound "audio/sound/blade slice flesh.mp3"
-    show berserker at rapid_shake
+    hide berserker
+    show berserker zorder 1
     elly "Hiyaaaaa!!!"
     bers "Urrrggghhh...."
     show berserker at fall_down
@@ -1120,7 +1123,10 @@ label berserkerstrueface:
     show woods_day at bg_jitter
     play sound "audio/sound/grass standing up.mp3"
     elly "...Berserker?  Oh dear..."
+    show speechright bad at speechright_pos
+    play sound "audio/sound/bad.wav"  
     bers "Why... me..."
+    hide speechright
     bers "..."
     hide elisanne with dissolve
 
@@ -1191,7 +1197,7 @@ label berserkerstrueface:
     show elisanne angry frown1 with dissolve
     show speechright anger at speechright_pos
     play sound "audio/sound/anger.wav"  
-    elly "What do you mean, 'We ALL took it way too far?'  YOU were the one who assaulted him with bees!!!"
+    elly "What do you mean, 'we ALL took it way too far?'  YOU were the one who assaulted him with bees!!!"
     hide speechright
     hide elisanne with dissolve
 
@@ -1211,7 +1217,7 @@ label berserkerstrueface:
 
     show berserker surprised with dissolve
     show berserker at laugh_bob
-    bers "Heh... At some level, I should be flattered that you were so intrigued by me."
+    bers "Heh... At some level, I should be flattered that you all were so intrigued by me."
     show berserker at disagree_shake
     bers "However, my appearance isn't some big secret.  To be frank, I have a rather plain-looking face."
     bers "If I had to explain why I wear my armor at all times... I suppose it's because I want to leave the past in the past."
@@ -1219,13 +1225,14 @@ label berserkerstrueface:
     bers "Before I donned this armor, I didn't lead a life that I was proud of.  I made a lot of mistakes."
     bers "When I became a mercenary, I decided that I wanted to put my past to rest and start a new life."
     show berserker neutral
-    stop music fadeout 1.0
-    play music "audio/music/CRASHER (Story Version A) loop.mp3" fadein 3.0
+    stop music fadeout 2.0
+    queue music "audio/music/CRASHER (Story Version A) loop.mp3" fadein 3.0
     bers "So I took on a new identity.  I wanted my armor to become a symbol of my resolve to fight, and my desire to face strong foes."
-    bers "And I've found a lot of joy in my new life.  Deadly struggles allow me, however briefly, to experience the zeal for life pulsing in my veins."
+    bers "And I've found a lot of joy in my new life.  Deadly struggles allow me, however briefly, to experience a burning zeal for life pulsing through my veins."
     bers "And it also was under this identity that I came to join the Halidom and found a new reason to wield my sword."
     bers "A cause that was not just worth dying for, but worth LIVING for."
-    bers "So... I've decided that I want to BECOME the armor that people see.  To be reborn not as a man, but as a symbol of valor and righteous battle."
+    show berserker surprised
+    bers "So... I've decided that I want to BECOME this armor of mine.  To be reborn not as a man, but as a symbol of valor and righteous battle."
     show berserker askance at laugh_bob
     bers "Although... heh, I suppose there are more mundane reasons as well.  I would be lying if I said I wasn't proud of my armor."
     bers "It's gotten me through many a battle, and I can't deny that the awe, fear and respect that it inspires in others is... enjoyable."
@@ -1237,7 +1244,7 @@ label berserkerstrueface:
     ranz "Well, as far as my vote goes, it's a damn fine suit of armor.  For a damn fine warrior.  It suits you, buddy."
     hide ranzal with dissolve
 
-    show berserker surprised with dissolve
+    show berserker surprised at laugh_bob with dissolve
     show speechright note at speechright_pos
     play sound "audio/sound/note.wav"
     bers "Heh... You have my gratitude, friend."
@@ -1310,7 +1317,7 @@ label berserkerstrueface:
     show cliff_storm at bg_jitter
     pause 0.8
     show cliff_storm at bg_jitter
-    play sound "audio/sound/dreadking rathalos roar.mp3" volume 0.6
+    play sound "audio/sound/dreadking rathalos roar.mp3" volume 0.45
     show cliff_storm at bg_jitter_long
     dkr "ROAAAAAAAAAAAAAAAAAAR!!!!"
     hide dreadking_rathalos with dissolve
@@ -1320,7 +1327,7 @@ label berserkerstrueface:
     show hberserker at laugh_bob
     pause 0.6
     show hberserker at laugh_bob
-    bers "Hahaha.... HAHAHAHAHA!!!  Did you feel the beast's roar coarse through your entire BODY?!?"
+    bers "Hahaha.... HAHAHAHAHA!!!  Can't you feel the beast's roar reverberate through your entire BODY?!?"
     show hberserker glint
     bers "That's how you know he's a FEISTY one!!!  Good, good!!!  GOOD!!!"
     hide hberserker with dissolve
@@ -1361,22 +1368,26 @@ label berserkerstrueface:
     show hberserker_sword at laugh_bob
     pause 0.6
     show hberserker_sword at laugh_bob
-    bers "HAHAHAHAHAAHAHAAHAHAHAHA!!!  COME AT ME, BEAST!!!  LET US SAVOR THIS FATAL DANCE!!!"
+    bers "HAHAHAHAHAAHAHAAHAHAHAHA!!!  HOLD NOTHING BACK, MY FOE!!!  LET US SAVOR THIS FATAL DANCE!!!"
 
     show hberserker_sword at big_swing_counterclockwise
+    play sound "audio/sound/axe swing.mp3"
+    pause 0.5
+    queue sound "audio/sound/axe swing.mp3" #floraphonic on pixabay
     pause 2.0
     show hberserker_sword at thrust_forward
     play sound "audio/sound/blade slice flesh.mp3"
     queue sound "audio/sound/blade slice flesh.mp3" volume 1.3
     queue sound "audio/sound/blade slice flesh.mp3" volume 1.6
-    queue sound "audio/sound/dreadking rathalos roar.mp3" volume 0.6
+    queue sound "audio/sound/dreadking rathalos roar.mp3" volume 0.45
+    pause 1.0
     show cliff_storm at bg_jitter_long
     dkr "ROAAAAAAAAAAAAAAAAAAR!!!!"
     hide hberserker_sword with dissolve
 
 
     scene black with fade
-    show text "{color=ffffff}{i}The End{/i}{/color}" at middle with dissolve
+    show text "{color=ffffff}{i}The End...?{/i}{/color}" at middle with dissolve
     pause 20.0
 
     jump newcastlestoriesmenu
