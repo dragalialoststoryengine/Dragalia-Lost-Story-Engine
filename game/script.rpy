@@ -407,6 +407,10 @@ label charactertestfiles:
             "O-Ok!  I hope you enjoy this song!"
             jump pia_character_procedures
 
+        "{color=#000000}Pinon's{/color}":
+            "Y-Yes, absolutely!  She will not be outdone by her senior apostles!"
+            jump pinon_character_procedures
+
         "{color=#000000}Ranzal's{/color}":
             "Ha ha ha!  In that case, yer on, Boss!"
             jump ranzal_character_procedures
